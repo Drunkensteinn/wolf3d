@@ -1,0 +1,4 @@
+/Users/ablizniu/Documents/Wolf3D/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/ablizniu/Documents/Wolf3D/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/ablizniu/Documents/Wolf3D/cmake-build-debug/CMakeFiles/Wolf3D.dir
+/Users/ablizniu/Documents/Wolf3D/cmake-build-debug/CMakeFiles/ft.dir
