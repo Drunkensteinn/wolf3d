@@ -159,8 +159,6 @@ void	validate_map(t_wolf3d *wolf, int32_t fd, char *path)
 
 	i = 0;
 	changes = false;
-	to_valid_pos = 0;
-	to_valid_row = 0;
 	if (start_end_raw(wolf))
 		changes = true;
 	while (i < wolf->len_array_y)
@@ -225,8 +223,8 @@ void fill_struct(t_map **map, size_t len_array, size_t index, t_list lst)
 		if (ft_isdigit(line[i]) && j < len_array)
 		{
 			(*map)[j].texture = ft_atoi(&line[i]);
-			(*map)[j].y = (double)index + 1;
-			(*map)[j].x = (double)j + 1;
+			(*map)[j].y = (double)index;
+			(*map)[j].x = (double)j;
 			j++;
 		}
 		i++;

@@ -6,7 +6,7 @@
 /*   By: ablizniu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/12 13:35:54 by ablizniu          #+#    #+#             */
-/*   Updated: 2019/03/15 22:23:27 by ablizniu         ###   ########.fr       */
+/*   Updated: 2019/03/20 20:56:30 by ablizniu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,15 +45,6 @@ t_map **init_map(size_t size)
 	return (member);
 }
 
-t_vectors *init_vectors(void)
-{
-	t_vectors	*member;
-
-	if (!(member = (t_vectors *)ft_memalloc(sizeof(t_vectors))))
-		return (NULL);
-	return (member);
-}
-
 t_wolf3d *init_wolf3d(void)
 {
 	t_wolf3d *member;
@@ -61,6 +52,5 @@ t_wolf3d *init_wolf3d(void)
 	if (!(member = (t_wolf3d *)ft_memalloc(sizeof(t_wolf3d))))
 		return (NULL);
 	member->mlx = init_mlx();
-	member->vectors = init_vectors();
 	return (member);
 }
