@@ -6,7 +6,7 @@
 /*   By: ablizniu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/11 20:37:34 by ablizniu          #+#    #+#             */
-/*   Updated: 2019/03/23 21:11:39 by ablizniu         ###   ########.fr       */
+/*   Updated: 2019/03/29 15:05:01 by ablizniu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,23 +20,22 @@
 #include <math.h>
 #include "errors.h"
 
+# define A_KEY 0
+# define D_KEY 2
+
 # define DEFAULT_TEXTURE		1
 # define DIMENSION				3
 # define DEFAULT_SCALE			64
 # define FIELD_OF_VIEW			66
-# define DISTANCE				(W / 2) / (tan((FIELD_OF_VIEW * M_PI / 180) / 2))
-# define ANGLE_NEIBORING_RAYS	FIELD_OF_VIEW / W
 # define Z(f) f[2]
 # define Y(f) f[1]
 # define X(f) f[0]
 # define A(f) f[1]
 # define B(f) f[2]
-# define H 600
-# define W 960
+# define H 720
+# define W 1080
 
 typedef long double t_vector __attribute__((vector_size(sizeof(long double) * 3)));
-typedef float  t_dir_vect __attribute__((vector_size(sizeof(float) * 2)));
-typedef int t_map_coord __attribute__((vector_size(sizeof(int) * 2)));
 
 typedef enum			e_texture
 {
@@ -69,31 +68,29 @@ typedef struct			s_intersection
 {
 	double x;
 	double y;
-	size_t x_map;
-	size_t y_map;
 }						t_intersection;
 
 typedef struct	__attribute__((packed))	s_wolf3d
 {
 	struct s_map		**map;
 	struct s_mlx		*mlx;
-	size_t				half_plane;
 	double 				x_column_fov;
 	size_t				len_array_y;
 	size_t				len_array_x;
 	double				curr_tan;
+	double				hit_coords_x;
+	double				hit_coords_y;
 	double				player_coord_x;
 	double				player_coord_y;
 	double 				pos_delta_x;
 	double 				pos_delta_y;
 	double 				current_delta_x;
 	double 				current_delta_y;
-	double 				init_len_x;
-	double 				init_len_y;
+	size_t				x;
+	size_t				y;
 	size_t 				map_pos_x;
 	size_t 				map_pos_y;
 	t_vector			ray;
-	t_vector			direction;
 	t_vector			player[DIMENSION];
 	t_vector			basis[DIMENSION - 1];
 	t_texture			textures;
@@ -101,11 +98,17 @@ typedef struct	__attribute__((packed))	s_wolf3d
 
 }						t_wolf3d;
 
-void		first_inter_y(t_wolf3d *wolf, t_bool sign);
+void		matrix_mult(t_wolf3d *wolf);
 
-void		first_inter_x(t_wolf3d *wolf, t_bool sign);
+void		define_players_vectors(t_wolf3d *wolf);
 
-t_map		find_a_hit(t_wolf3d *wolf, t_bool sign, void (*f)(t_wolf3d *, t_bool));
+int			keys(int code, t_wolf3d *wolf);
+
+void		first_inter_y(t_wolf3d *wolf);
+
+void		first_inter_x(t_wolf3d *wolf);
+
+t_map		find_a_hit(t_wolf3d *wolf, void (*f)(t_wolf3d *));
 
 double_t	get_dist(void);
 

@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/ablizniu/Documents/Wolf3D/src/main.c" "/Users/ablizniu/Documents/Wolf3D/cmake-build-debug/CMakeFiles/Wolf3D.dir/src/main.c.o"
   "/Users/ablizniu/Documents/Wolf3D/src/preparation.c" "/Users/ablizniu/Documents/Wolf3D/cmake-build-debug/CMakeFiles/Wolf3D.dir/src/preparation.c.o"
   "/Users/ablizniu/Documents/Wolf3D/src/print.c" "/Users/ablizniu/Documents/Wolf3D/cmake-build-debug/CMakeFiles/Wolf3D.dir/src/print.c.o"
+  "/Users/ablizniu/Documents/Wolf3D/src/rotation_and_move.c" "/Users/ablizniu/Documents/Wolf3D/cmake-build-debug/CMakeFiles/Wolf3D.dir/src/rotation_and_move.c.o"
   "/Users/ablizniu/Documents/Wolf3D/src/utils.c" "/Users/ablizniu/Documents/Wolf3D/cmake-build-debug/CMakeFiles/Wolf3D.dir/src/utils.c.o"
   "/Users/ablizniu/Documents/Wolf3D/src/validation.c" "/Users/ablizniu/Documents/Wolf3D/cmake-build-debug/CMakeFiles/Wolf3D.dir/src/validation.c.o"
   )

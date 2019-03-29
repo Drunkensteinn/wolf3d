@@ -26,6 +26,11 @@ CMakeFiles/Wolf3D.dir/src/print.c.o
  /Users/ablizniu/Documents/Wolf3D/includes/wolf3d.h
  /Users/ablizniu/Documents/Wolf3D/libft/libft.h
  /Users/ablizniu/Documents/Wolf3D/src/print.c
+CMakeFiles/Wolf3D.dir/src/rotation_and_move.c.o
+ /Users/ablizniu/Documents/Wolf3D/includes/errors.h
+ /Users/ablizniu/Documents/Wolf3D/includes/wolf3d.h
+ /Users/ablizniu/Documents/Wolf3D/libft/libft.h
+ /Users/ablizniu/Documents/Wolf3D/src/rotation_and_move.c
 CMakeFiles/Wolf3D.dir/src/utils.c.o
  /Users/ablizniu/Documents/Wolf3D/src/utils.c
 CMakeFiles/Wolf3D.dir/src/validation.c.o

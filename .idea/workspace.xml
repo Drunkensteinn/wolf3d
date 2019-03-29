@@ -12,20 +12,29 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab3e6fbb-405e-4967-a6a0-30c8144170ab" name="Default Changelist" comment="">
+    <list default="true" id="ab3e6fbb-405e-4967-a6a0-30c8144170ab" name="Default Changelist" comment="v a0.0.2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Wolf3D.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Wolf3D.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Wolf3D.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Wolf3D.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Wolf3D.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Wolf3D.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Wolf3D.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Wolf3D.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Wolf3D.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Wolf3D.dir/progress.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Wolf3D.dir/src/draw.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Wolf3D.dir/src/draw.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Wolf3D.dir/src/init.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Wolf3D.dir/src/init.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Wolf3D.dir/src/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Wolf3D.dir/src/main.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Wolf3D.dir/src/preparation.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Wolf3D.dir/src/preparation.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Wolf3D.dir/src/validation.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Wolf3D.dir/src/validation.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Wolf3D" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Wolf3D" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Wolf3D.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Wolf3D.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/wolf3d.h" beforeDir="false" afterPath="$PROJECT_DIR$/includes/wolf3d.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/map00.map" beforeDir="false" afterPath="$PROJECT_DIR$/map00.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/draw.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/draw.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/init.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/init.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/preparation.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/preparation.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/validation.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/validation.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.c" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,23 +45,32 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.62241226">
+    <splitter split-orientation="horizontal" split-proportion="0.37307343">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="437">
-                  <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+                <state relative-caret-position="405">
+                  <caret line="27" selection-start-line="27" selection-end-line="27" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/draw.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="241">
-                  <caret line="186" selection-start-line="186" selection-end-line="186" />
+                <state relative-caret-position="-529">
+                  <caret line="52" column="8" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="8" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/rotation_and_move.c">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="285">
+                  <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
                 </state>
               </provider>
             </entry>
@@ -60,35 +78,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/preparation.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="266">
+                <state relative-caret-position="203">
                   <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/init.c">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="950">
-                  <caret line="50" selection-start-line="50" selection-end-line="50" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/print.c">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="266">
-                  <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/utils.c">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="228">
-                  <caret line="12" selection-start-line="12" selection-end-line="12" />
                 </state>
               </provider>
             </entry>
@@ -96,24 +87,19 @@
         </leaf>
       </split-first>
       <split-second>
-        <splitter split-orientation="horizontal" split-proportion="0.46907216">
+        <splitter split-orientation="horizontal" split-proportion="0.48457047">
           <split-first>
             <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
               <file pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/includes/wolf3d.h">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="371">
-                      <caret line="73" column="12" lean-forward="true" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="12" />
+                    <state relative-caret-position="345">
+                      <caret line="23" column="16" lean-forward="true" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
                       <folding>
                         <element signature="e#927#954#0" expanded="true" />
                       </folding>
                     </state>
                   </provider>
-                </entry>
-              </file>
-              <file pinned="false" current-in-tab="false">
-                <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include/limits.h">
-                  <provider selected="true" editor-type-id="text-editor" />
                 </entry>
               </file>
             </leaf>
@@ -123,8 +109,8 @@
               <file pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/map00.map">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="133">
-                      <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+                    <state relative-caret-position="45">
+                      <caret line="3" column="7" lean-forward="true" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
                     </state>
                   </provider>
                 </entry>
@@ -135,7 +121,13 @@
       </split-second>
     </splitter>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>win</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="REBASE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -146,20 +138,22 @@
         <option value="$PROJECT_DIR$/libft/ft_lstnew.c" />
         <option value="$PROJECT_DIR$/src/utils.c" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/src/main.c" />
         <option value="$PROJECT_DIR$/includes/errors.h" />
         <option value="$PROJECT_DIR$/src/validation.c" />
         <option value="$PROJECT_DIR$/src/init.c" />
         <option value="$PROJECT_DIR$/src/preparation.c" />
-        <option value="$PROJECT_DIR$/includes/wolf3d.h" />
         <option value="$PROJECT_DIR$/map00.map" />
+        <option value="$PROJECT_DIR$/includes/wolf3d.h" />
         <option value="$PROJECT_DIR$/src/draw.c" />
+        <option value="$PROJECT_DIR$/src/rotation_and_move.c" />
+        <option value="$PROJECT_DIR$/src/main.c" />
       </list>
     </option>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+    <option name="x" value="78" />
+    <option name="y" value="84" />
     <option name="width" value="2560" />
     <option name="height" value="1337" />
   </component>
@@ -195,9 +189,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -271,31 +267,48 @@
       <workItem from="1553272415771" duration="4612000" />
       <workItem from="1553282830292" duration="2460000" />
       <workItem from="1553347612575" duration="1442000" />
-      <workItem from="1553354820280" duration="13183000" />
+      <workItem from="1553354820280" duration="14048000" />
+      <workItem from="1553604040849" duration="16343000" />
+      <workItem from="1553682456108" duration="2577000" />
+      <workItem from="1553690822597" duration="6114000" />
+      <workItem from="1553702690976" duration="8823000" />
+      <workItem from="1553720551631" duration="1224000" />
+      <workItem from="1553773846241" duration="3100000" />
+      <workItem from="1553782779600" duration="8843000" />
+      <workItem from="1553857625153" duration="3422000" />
+      <workItem from="1553862731000" duration="3382000" />
     </task>
+    <task id="LOCAL-00001" summary="v a0.0.2">
+      <created>1553373643779</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1553373643779</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="134537000" />
+    <option name="totallyTimeSpent" value="189230000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="2560" height="1337" extended-state="0" />
+    <frame x="78" y="84" width="2560" height="1337" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.117553614" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12470215" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32978722" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32815057" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49960285" visible="true" weight="0.3690671" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49960285" visible="true" weight="0.38134205" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.24549918" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.19721767" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.21031097" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50039715" side_tool="true" weight="0.28968903" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.32978722" />
       <window_info anchor="bottom" id="CMake" order="12" weight="0.32978722" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -306,122 +319,431 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="v a0.0.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="v a0.0.2" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <condition expression="iter == 479" language="ObjectiveC" />
+        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/src/draw.c</url>
-          <line>276</line>
-          <option name="timeStamp" value="225" />
+          <line>224</line>
+          <option name="timeStamp" value="870" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/src/draw.c</url>
-          <line>280</line>
-          <option name="timeStamp" value="226" />
+          <line>218</line>
+          <option name="timeStamp" value="871" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/src/draw.c</url>
-          <line>279</line>
-          <option name="timeStamp" value="227" />
+          <line>217</line>
+          <option name="timeStamp" value="872" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/src/draw.c</url>
-          <line>278</line>
-          <option name="timeStamp" value="228" />
+          <line>216</line>
+          <option name="timeStamp" value="873" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/src/draw.c</url>
-          <line>150</line>
-          <option name="timeStamp" value="229" />
+          <line>223</line>
+          <option name="timeStamp" value="875" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/src/draw.c</url>
-          <line>149</line>
-          <option name="timeStamp" value="230" />
+          <line>220</line>
+          <option name="timeStamp" value="876" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/src/draw.c</url>
-          <line>151</line>
-          <option name="timeStamp" value="231" />
+          <line>219</line>
+          <option name="timeStamp" value="877" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/src/draw.c</url>
-          <line>152</line>
-          <option name="timeStamp" value="232" />
+          <line>221</line>
+          <option name="timeStamp" value="878" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/src/draw.c</url>
-          <line>153</line>
-          <option name="timeStamp" value="233" />
+          <line>222</line>
+          <option name="timeStamp" value="879" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/src/draw.c</url>
-          <line>154</line>
-          <option name="timeStamp" value="234" />
+          <line>229</line>
+          <option name="timeStamp" value="880" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/draw.c</url>
+          <line>228</line>
+          <option name="timeStamp" value="881" />
+        </line-breakpoint>
+        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/draw.c</url>
+          <line>230</line>
+          <option name="timeStamp" value="882" />
+        </line-breakpoint>
+        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/draw.c</url>
+          <line>231</line>
+          <option name="timeStamp" value="883" />
+        </line-breakpoint>
+        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/draw.c</url>
+          <line>232</line>
+          <option name="timeStamp" value="884" />
+        </line-breakpoint>
+        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/draw.c</url>
+          <line>233</line>
+          <option name="timeStamp" value="885" />
+        </line-breakpoint>
+        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/draw.c</url>
+          <line>234</line>
+          <option name="timeStamp" value="886" />
+        </line-breakpoint>
+        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/draw.c</url>
+          <line>235</line>
+          <option name="timeStamp" value="887" />
+        </line-breakpoint>
+        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/draw.c</url>
+          <line>236</line>
+          <option name="timeStamp" value="888" />
+        </line-breakpoint>
+        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/draw.c</url>
+          <line>238</line>
+          <option name="timeStamp" value="889" />
+        </line-breakpoint>
+        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/draw.c</url>
+          <line>239</line>
+          <option name="timeStamp" value="890" />
+        </line-breakpoint>
+        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/draw.c</url>
+          <line>240</line>
+          <option name="timeStamp" value="891" />
+        </line-breakpoint>
+        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/draw.c</url>
+          <line>237</line>
+          <option name="timeStamp" value="892" />
+        </line-breakpoint>
+        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/draw.c</url>
+          <line>227</line>
+          <option name="timeStamp" value="893" />
+        </line-breakpoint>
+        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/draw.c</url>
+          <line>241</line>
+          <option name="timeStamp" value="894" />
+        </line-breakpoint>
+        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/draw.c</url>
+          <line>161</line>
+          <option name="timeStamp" value="895" />
+        </line-breakpoint>
+        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/draw.c</url>
+          <line>160</line>
+          <option name="timeStamp" value="896" />
+        </line-breakpoint>
+        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/draw.c</url>
+          <line>158</line>
+          <option name="timeStamp" value="897" />
+        </line-breakpoint>
+        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/draw.c</url>
+          <line>159</line>
+          <option name="timeStamp" value="899" />
+        </line-breakpoint>
+        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/draw.c</url>
+          <line>162</line>
+          <option name="timeStamp" value="900" />
+        </line-breakpoint>
+        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/draw.c</url>
+          <line>163</line>
+          <option name="timeStamp" value="901" />
+        </line-breakpoint>
+        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/draw.c</url>
+          <line>165</line>
+          <option name="timeStamp" value="902" />
+        </line-breakpoint>
+        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/draw.c</url>
+          <line>164</line>
+          <option name="timeStamp" value="903" />
+        </line-breakpoint>
+        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/draw.c</url>
+          <line>166</line>
+          <option name="timeStamp" value="904" />
+        </line-breakpoint>
+        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/draw.c</url>
+          <line>167</line>
+          <option name="timeStamp" value="905" />
+        </line-breakpoint>
+        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/draw.c</url>
+          <line>168</line>
+          <option name="timeStamp" value="906" />
+        </line-breakpoint>
+        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/draw.c</url>
+          <line>169</line>
+          <option name="timeStamp" value="907" />
+        </line-breakpoint>
+        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/draw.c</url>
+          <line>170</line>
+          <option name="timeStamp" value="908" />
+        </line-breakpoint>
+        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/draw.c</url>
+          <line>137</line>
+          <option name="timeStamp" value="909" />
+        </line-breakpoint>
+        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/draw.c</url>
+          <line>139</line>
+          <option name="timeStamp" value="910" />
+        </line-breakpoint>
+        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/draw.c</url>
+          <line>144</line>
+          <option name="timeStamp" value="913" />
+        </line-breakpoint>
+        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/src/draw.c</url>
           <line>148</line>
-          <option name="timeStamp" value="235" />
+          <option name="timeStamp" value="914" />
+        </line-breakpoint>
+        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/draw.c</url>
+          <line>244</line>
+          <option name="timeStamp" value="915" />
+        </line-breakpoint>
+        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/draw.c</url>
+          <line>245</line>
+          <option name="timeStamp" value="916" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/draw.c</url>
-          <line>147</line>
-          <option name="timeStamp" value="236" />
+          <url>file://$PROJECT_DIR$/src/main.c</url>
+          <line>33</line>
+          <option name="timeStamp" value="928" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/draw.c</url>
-          <line>146</line>
-          <option name="timeStamp" value="237" />
+          <url>file://$PROJECT_DIR$/src/main.c</url>
+          <line>32</line>
+          <option name="timeStamp" value="929" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/draw.c</url>
-          <line>196</line>
-          <option name="timeStamp" value="238" />
+          <url>file://$PROJECT_DIR$/src/main.c</url>
+          <line>34</line>
+          <option name="timeStamp" value="930" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/draw.c</url>
-          <line>197</line>
-          <option name="timeStamp" value="239" />
+          <url>file://$PROJECT_DIR$/src/main.c</url>
+          <line>35</line>
+          <option name="timeStamp" value="931" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/draw.c</url>
-          <line>195</line>
-          <option name="timeStamp" value="240" />
+          <url>file://$PROJECT_DIR$/src/main.c</url>
+          <line>36</line>
+          <option name="timeStamp" value="932" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/draw.c</url>
-          <line>281</line>
-          <option name="timeStamp" value="242" />
+          <url>file://$PROJECT_DIR$/src/rotation_and_move.c</url>
+          <line>39</line>
+          <option name="timeStamp" value="933" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/rotation_and_move.c</url>
+          <line>40</line>
+          <option name="timeStamp" value="934" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/rotation_and_move.c</url>
+          <line>38</line>
+          <option name="timeStamp" value="935" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/rotation_and_move.c</url>
+          <line>32</line>
+          <option name="timeStamp" value="936" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/rotation_and_move.c</url>
+          <line>33</line>
+          <option name="timeStamp" value="937" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/rotation_and_move.c</url>
+          <line>31</line>
+          <option name="timeStamp" value="938" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/rotation_and_move.c</url>
+          <line>34</line>
+          <option name="timeStamp" value="940" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/rotation_and_move.c</url>
+          <line>24</line>
+          <option name="timeStamp" value="942" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/rotation_and_move.c</url>
+          <line>23</line>
+          <option name="timeStamp" value="943" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/rotation_and_move.c</url>
+          <line>22</line>
+          <option name="timeStamp" value="944" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/rotation_and_move.c</url>
+          <line>41</line>
+          <option name="timeStamp" value="945" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/rotation_and_move.c</url>
+          <line>20</line>
+          <option name="timeStamp" value="946" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/rotation_and_move.c</url>
+          <line>29</line>
+          <option name="timeStamp" value="947" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/rotation_and_move.c</url>
+          <line>35</line>
+          <option name="timeStamp" value="948" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/rotation_and_move.c</url>
+          <line>26</line>
+          <option name="timeStamp" value="949" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/rotation_and_move.c</url>
+          <line>25</line>
+          <option name="timeStamp" value="950" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/main.c</url>
+          <line>19</line>
+          <option name="timeStamp" value="951" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/main.c</url>
+          <line>17</line>
+          <option name="timeStamp" value="952" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/main.c</url>
+          <line>16</line>
+          <option name="timeStamp" value="953" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/main.c</url>
+          <line>18</line>
+          <option name="timeStamp" value="954" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/main.c</url>
+          <line>20</line>
+          <option name="timeStamp" value="955" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/main.c</url>
+          <line>22</line>
+          <option name="timeStamp" value="956" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/main.c</url>
+          <line>21</line>
+          <option name="timeStamp" value="957" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="CMakeRunConfiguration">
-        <watch expression="wolf-&gt;map[pos_y][pos_x]" language="ObjectiveC" />
+        <watch expression="arr[1]" language="ObjectiveC" />
+        <watch expression="arr[0]" language="ObjectiveC" />
       </configuration>
     </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="breakpointCondition">
       <expression>
-        <expression-string>iter == 479</expression-string>
-        <language-id>ObjectiveC</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>wolf-&gt;x_column_fov == W / 2</expression-string>
-        <language-id>ObjectiveC</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>wolf-&gt;x_column_fov == 481</expression-string>
-        <language-id>ObjectiveC</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>wolf-&gt;x_column_fov ==  481</expression-string>
+        <expression-string>wolf-&gt;x_column_fov == 344</expression-string>
         <language-id>ObjectiveC</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -431,32 +753,57 @@
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>wolf-&gt;x_column_fov == 273</expression-string>
+        <expression-string>wolf-&gt;x_column_fov == 491</expression-string>
         <language-id>ObjectiveC</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>wolf-&gt;x_column_fov == 93</expression-string>
+        <expression-string>wolf-&gt;x_column_fov == 196</expression-string>
         <language-id>ObjectiveC</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>wolf-&gt;x_column_fov == 7</expression-string>
+        <expression-string>wolf-&gt;x_column_fov == 96</expression-string>
         <language-id>ObjectiveC</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>wolf-&gt;curr_angle == 90</expression-string>
+        <expression-string>wolf-&gt;x_column_fov == W / 2</expression-string>
         <language-id>ObjectiveC</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>wolf-&gt;curr_angle &gt;= 90</expression-string>
+        <expression-string>iter == 480</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>iter == 479</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>iter == 337</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>wolf-&gt;x_column_fov == 481</expression-string>
         <language-id>ObjectiveC</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
     <expressions id="watch">
+      <expression>
+        <expression-string>arr[0]</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>arr[1]</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>wolf-&gt;map[pos_y][pos_x]</expression-string>
         <language-id>ObjectiveC</language-id>
@@ -630,55 +977,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-        </state>
-      </provider>
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include/limits.h">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/preparation.c">
+    <entry file="file://$PROJECT_DIR$/src/print.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+        <state relative-caret-position="182">
+          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/init.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="950">
+        <state relative-caret-position="565">
           <caret line="50" selection-start-line="50" selection-end-line="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/print.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/utils.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
+        <state relative-caret-position="156">
           <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include/limits.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file:///usr/include/math.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="52" column="53" lean-forward="true" selection-start-line="52" selection-start-column="53" selection-end-line="52" selection-end-column="53" />
+        <state relative-caret-position="178">
+          <caret line="59" column="15" lean-forward="true" selection-start-line="59" selection-start-column="15" selection-end-line="59" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/ft_memdel.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/ncurses.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-154">
+          <caret line="547" column="53" selection-start-line="547" selection-start-column="50" selection-end-line="547" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/ft_memalloc.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/preparation.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/wolf3d.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="73" column="12" lean-forward="true" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="12" />
+        <state relative-caret-position="345">
+          <caret line="23" column="16" lean-forward="true" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
           <folding>
             <element signature="e#927#954#0" expanded="true" />
           </folding>
@@ -687,15 +1048,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/map00.map">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+        <state relative-caret-position="45">
+          <caret line="3" column="7" lean-forward="true" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/draw.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="186" selection-start-line="186" selection-end-line="186" />
+        <state relative-caret-position="-529">
+          <caret line="52" column="8" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rotation_and_move.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>

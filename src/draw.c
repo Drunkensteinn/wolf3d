@@ -6,7 +6,7 @@
 /*   By: ablizniu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/13 17:51:08 by ablizniu          #+#    #+#             */
-/*   Updated: 2019/03/23 22:29:49 by ablizniu         ###   ########.fr       */
+/*   Updated: 2019/03/29 15:30:27 by ablizniu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,18 +27,6 @@ void	write_line(t_wolf3d *wolf, int32_t from, int32_t to, int32_t attribute)
 	}
 }
 
-int32_t	rounding(double num)
-{
-	int32_t buff;
-
-	buff = 0;
-	buff = (int32_t)num;
-	if (num - (double)buff > 0.5)
-		return (buff + 1);
-	else
-		return (buff);
-}
-
 double	calculate_wall(t_wolf3d *wolf, double wall_dist)
 {
 	double distance;
@@ -49,7 +37,7 @@ double	calculate_wall(t_wolf3d *wolf, double wall_dist)
 
 double_t get_dist(void)
 {
-	return (((double)W / 2) / (tan(FIELD_OF_VIEW * M_PI / 180) / 2));
+	return (((double)W / 2) / (tan((double)FIELD_OF_VIEW / 2 * M_PI / 180)));
 }
 
 void	matrix_mult(t_wolf3d *wolf)
@@ -69,17 +57,15 @@ void	define_players_vectors(t_wolf3d *wolf)
 	distance = get_dist();
 	wolf->basis[0] = (t_vector){1, 0, 0};
 	wolf->basis[1] = (t_vector){0, 1, 0};
-	wolf->player[2] = (t_vector){0, 0, 1};
-	wolf->player[1] = (t_vector){0, 1, 0};
 	matrix_mult(wolf);/*right vector*/
-	Y(wolf->player[1]) = distance * Y(wolf->basis[1]);
+	Y(wolf->player[1]) = distance * Y(wolf->player[1]);
 }
 
-size_t	len_vector(long double x0, long double x1)
+double	len_vector(long double x0, long double x1)
 {
-	size_t size;
+	double size;
 
-	size = (size_t)sqrt((double)(x0 * x0 + x1 * x1));
+	size = sqrt((double)(x0 * x0 + x1 * x1));
 	return (size);
 }
 
@@ -109,130 +95,155 @@ t_vector norm_vector(t_vector vector, double len)
 	return (vector);
 }
 
-void	define_current_delta_pos_x(t_wolf3d *wolf, t_bool sign)
+void	define_current_delta_pos_x_y(t_wolf3d *wolf, t_vector vector)
 {
 	size_t x0;
-	size_t x1;
+	size_t y0;
 
-	x0 = (size_t)wolf->player_coord_x / DEFAULT_SCALE;
-	x0 *= DEFAULT_SCALE;
-	x1 = x0 + DEFAULT_SCALE;
-	if (sign)
+	x0 = (size_t)wolf->map_pos_x * DEFAULT_SCALE;
+	y0 = (size_t)wolf->map_pos_y * DEFAULT_SCALE;
+	if (X(vector) < 0)
 		wolf->pos_delta_x = wolf->player_coord_x - x0;
 	else
-		wolf->pos_delta_x = x1 - wolf->player_coord_x;
-}
-
-void	define_current_delta_pos_y(t_wolf3d *wolf, t_bool sign)
-{
-	size_t y0;
-	size_t y1;
-
-	y0 = (size_t)wolf->player_coord_y / DEFAULT_SCALE;;
-	y0 *= DEFAULT_SCALE;;
-	y1 = y0 + DEFAULT_SCALE;
-	wolf->pos_delta_y = wolf->player_coord_y - y0;
-}
-
-void	define_ray_angle(t_wolf3d *wolf, t_bool *sign)
-{
-	t_vector	plane;
-
-	plane = ft_zero_vector(plane);
-	wolf->half_plane = (size_t)W / 2;
-	if (wolf->half_plane - wolf->x_column_fov > 0)
-		*sign = true;
+		wolf->pos_delta_x = (DEFAULT_SCALE - (int32_t)wolf->player_coord_x % DEFAULT_SCALE);
+	if (Y(vector) < 0)
+		wolf->pos_delta_y = wolf->player_coord_y - y0;
 	else
-		*sign = false;
-	plane[0] = (FT_ABS(wolf->half_plane - wolf->x_column_fov)) * (X(wolf->player[0]) * (*sign) ? (-1.0) : (1.0));
-	plane += wolf->player[1];
-	plane = norm_vector(plane, len_vector(plane[0], plane[1]));
-	if (*sign)
-		wolf->curr_tan = FT_ABS(plane[1] / plane[0]);
+		wolf->pos_delta_y = (DEFAULT_SCALE - (int32_t)wolf->player_coord_y % DEFAULT_SCALE);
+}
+
+t_vector vector_scaling(t_vector vector, double num)
+{
+	vector[0] *= num;
+	vector[1] *= num;
+	vector[2] *= num;
+	return (vector);
+}
+
+void	define_ray_angle(t_wolf3d *wolf)
+{
+	wolf->ray = ft_zero_vector(wolf->ray);
+	wolf->ray = vector_scaling(wolf->player[0], wolf->x_column_fov - (double)W / 2);
+	wolf->ray += wolf->player[1];
+	wolf->ray = norm_vector(wolf->ray, len_vector(wolf->ray[0], wolf->ray[1]));
+	define_current_delta_pos_x_y(wolf, wolf->ray);
+	wolf->curr_tan = FT_ABS(wolf->ray[1] / wolf->ray[0]);//могут быть траблы из-за тангенса inf или ноль
+}
+
+void first_inter_x(t_wolf3d *wolf)
+{
+	double x_delta;
+	double y_delta;
+
+	x_delta = wolf->pos_delta_y / wolf->curr_tan;
+	y_delta = DEFAULT_SCALE;
+	wolf->current_delta_x = x_delta;
+	wolf->current_delta_y = y_delta;
+	if (X(wolf->ray) < 0)
+		wolf->intersection.x = wolf->player_coord_x - x_delta;
 	else
-		wolf->curr_tan = FT_ABS(plane[0] / plane[1]);
-	if (wolf->curr_tan >= INFINITY)
-		wolf->curr_tan = 0;
+		wolf->intersection.x = wolf->player_coord_x + x_delta;
+	if (Y(wolf->ray) < 0)
+		wolf->intersection.y = (size_t)(wolf->map_pos_y * DEFAULT_SCALE);
+	else
+		wolf->intersection.y = (size_t)(wolf->map_pos_y * DEFAULT_SCALE) + DEFAULT_SCALE;
+//	printf("RAY X | x - %f y - %f \n", wolf->intersection.x, wolf->intersection.y);
+
 }
 
-void	first_inter_x(t_wolf3d *wolf, t_bool sign)
+void first_inter_y(t_wolf3d *wolf)
 {
-	define_current_delta_pos_y(wolf, false);
-	wolf->intersection.x = (wolf->curr_tan * wolf->pos_delta_y) + wolf->player_coord_x;
-	wolf->intersection.y = wolf->map_pos_y * DEFAULT_SCALE;
-	wolf->current_delta_y = DEFAULT_SCALE;
-	wolf->current_delta_x = wolf->curr_tan * wolf->pos_delta_y;
-	wolf->init_len_x = wolf->current_delta_x;
-	wolf->init_len_y = wolf->pos_delta_y;
+	double x_delta;
+	double y_delta;
+
+	x_delta = DEFAULT_SCALE;
+	y_delta = wolf->pos_delta_x * wolf->curr_tan;
+	wolf->current_delta_x = x_delta;
+	wolf->current_delta_y = y_delta;
+	if (X(wolf->ray) < 0)
+		wolf->intersection.x = (size_t)(wolf->map_pos_x * DEFAULT_SCALE);
+	else
+		wolf->intersection.x = (size_t)(wolf->map_pos_x * DEFAULT_SCALE) + DEFAULT_SCALE;
+	if (Y(wolf->ray) < 0)
+		wolf->intersection.y = wolf->player_coord_y - y_delta;
+	else
+		wolf->intersection.y = wolf->player_coord_y + y_delta;
+//	printf("RAY Y | x - %f y - %f \n",  wolf->intersection.x, wolf->intersection.y);
 }
 
-void	first_inter_y(t_wolf3d *wolf, t_bool sign)
-{
-	define_current_delta_pos_x(wolf, sign);
-	wolf->intersection.y = (wolf->curr_tan * wolf->pos_delta_x) + wolf->player_coord_y;// не правильно
-	wolf->intersection.x = sign ? (wolf->map_pos_x * DEFAULT_SCALE) :
-			((wolf->map_pos_x + 1) * DEFAULT_SCALE);
-	wolf->current_delta_y = wolf->curr_tan * wolf->pos_delta_x;
-	wolf->current_delta_x = DEFAULT_SCALE;
-	wolf->init_len_x = wolf->pos_delta_x;
-	wolf->init_len_y = wolf->current_delta_y;
-}
-
-double	calculate_len_ray_x(t_wolf3d *wolf, t_bool sign)
+double	calculate_len_ray(t_wolf3d *wolf, void (*f)(t_wolf3d *))
 {
 	t_map	point;
+	double	y;
+	double 	x;
 	double	len;
 
-	point = find_a_hit(wolf, sign, &first_inter_x);
-	len = len_vector(point.x - wolf->player_coord_x, point.y - wolf->player_coord_y);
+	point = find_a_hit(wolf, f);
+	y = wolf->hit_coords_y - wolf->player_coord_y;
+	x = wolf->hit_coords_x - wolf->player_coord_x;
+	len = len_vector(y, x);
 	return (len);
 }
 
-double	calculate_len_ray_y(t_wolf3d *wolf, t_bool sign)
+size_t *transfer_coords(t_wolf3d *wolf, double x, double y)
 {
-	t_map	point;
-	double	len;
+	size_t *arr;
 
-	point = find_a_hit(wolf, sign, &first_inter_y);
-	len = len_vector(point.x - wolf->player_coord_x, point.y - wolf->player_coord_y) ;
-	return (len);
+	if (!(arr = (size_t *)ft_memalloc(sizeof(size_t) * 2)))
+		return (NULL);
+	if (x >= 0 && x < wolf->len_array_x * DEFAULT_SCALE)
+		arr[INDEX(1)] = (size_t)(x / DEFAULT_SCALE);
+	else if (x >= wolf->len_array_x * DEFAULT_SCALE)
+		arr[INDEX(1)] =  wolf->len_array_x - 1;
+	else if (x < 0)
+		arr[INDEX(1)] = 0;
+	if (y >= 0 && y < wolf->len_array_y * DEFAULT_SCALE)
+		arr[INDEX(2)] = (size_t)(y / DEFAULT_SCALE);
+	else if (y >= wolf->len_array_y * DEFAULT_SCALE)
+		arr[INDEX(2)] =  wolf->len_array_y - 1;
+	else if (y < 0)
+		arr[INDEX(2)] = 0;
+	return (arr);
 }
 
-t_map	find_a_hit(t_wolf3d *wolf, t_bool sign, void (*f)(t_wolf3d *, t_bool))
+t_map	find_a_hit(t_wolf3d *wolf, void (*f)(t_wolf3d *))
 {
 	double hit;
-	double total_len_y;
-	double total_len_x;
-	size_t pos_x;
-	size_t pos_y;
+	double x0;
+	double y0;
+	size_t *arr;
 
 	hit = 0;
-	f(wolf, sign);
-	pos_x = wolf->map_pos_x;
-	pos_y = wolf->map_pos_y;
-	total_len_y = wolf->init_len_y;
-	total_len_x = wolf->init_len_x;
+	f(wolf);
+	if (wolf->intersection.x > (wolf->len_array_x) * DEFAULT_SCALE)
+		x0 = (wolf->len_array_x) * DEFAULT_SCALE;
+	else
+		x0 = wolf->intersection.x;
+	if (wolf->intersection.y > (wolf->len_array_y) * DEFAULT_SCALE)
+		y0 = (wolf->len_array_y) * DEFAULT_SCALE;
+	else
+		y0 = wolf->intersection.y;
 	while (!hit)
 	{
-		if (total_len_x < total_len_y)
-		{
-			total_len_x += wolf->current_delta_x;
-			if (sign && pos_x > 0)
-				pos_x--;
-			else if (!sign && pos_x <= wolf->len_array_x)
-				pos_x++;
-		}
-		else
-		{
-			total_len_y += wolf->current_delta_y;
-			if (sign && pos_y > 0)
-				pos_y--;
-			else if (!sign && pos_y < wolf->len_array_y)
-				pos_y++;
-		}
-		hit = wolf->map[pos_y][pos_x].texture;
+		arr = transfer_coords(wolf, x0, y0);
+		wolf->y = arr[1];
+		wolf->x = arr[0];
+		ft_memdel((void *)&arr);
+		if ((hit = wolf->map[wolf->y][wolf->x].texture))
+			continue ;
+		if (X(wolf->ray) < 0)
+			x0 -= wolf->current_delta_x;
+		else if (X(wolf->ray) >= 0)
+			x0 += wolf->current_delta_x;
+		if (Y(wolf->ray) < 0)
+			y0 -= wolf->current_delta_y;
+		else if (Y(wolf->ray) >= 0)
+			y0 += wolf->current_delta_y;
 	}
-	return (wolf->map[pos_y][pos_x]);
+	wolf->hit_coords_x = x0;
+	wolf->hit_coords_y = y0;
+//	printf("hit coords x - %f  y - %f \n", x0, y0);
+	return (wolf->map[wolf->y][wolf->x]);
 }
 
 void	draw_wall(t_wolf3d *wolf, double len_x, double len_y)
@@ -265,21 +276,24 @@ void	draw_wall(t_wolf3d *wolf, double len_x, double len_y)
 
 void	main_draw_function(t_wolf3d *wolf)
 {
-	t_bool sign;
-	size_t iter;
 	double ray_x;
 	double ray_y;
 
-	iter = 0;
-	sign = false;
-	wolf->half_plane = (size_t)W / 2;
-	define_players_vectors(wolf);
+//	wolf->map_pos_x = 1;
+//	wolf->map_pos_y = 1;
+//	wolf->player_coord_x = 80;
+//	wolf->player_coord_y = 80;
+//	wolf->player[1][0] = 2;
+//	wolf->player[1][1] = 2;
+//	wolf->x_column_fov = (double)W / 2;
+//	define_ray_angle(wolf);
+//	ray_y = calculate_len_ray(wolf, &first_inter_y);
+//	ray_x = calculate_len_ray(wolf, &first_inter_x);
 	while (wolf->x_column_fov < W)
 	{
-		define_ray_angle(wolf, &sign);;
-		ray_y = calculate_len_ray_y(wolf, sign);
-		ray_x = calculate_len_ray_x(wolf, sign);
-		printf("iter %zu ray y - %f ray x - %f \n",iter++ ,ray_y, ray_x);
+		define_ray_angle(wolf);
+		ray_y = calculate_len_ray(wolf, &first_inter_y);
+		ray_x = calculate_len_ray(wolf, &first_inter_x);
 		draw_wall(wolf, ray_x, ray_y);
 		wolf->x_column_fov++;
 	}

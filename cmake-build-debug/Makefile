@@ -2080,6 +2080,33 @@ src/print.c.s:
 	$(MAKE) -f CMakeFiles/Wolf3D.dir/build.make CMakeFiles/Wolf3D.dir/src/print.c.s
 .PHONY : src/print.c.s
 
+src/rotation_and_move.o: src/rotation_and_move.c.o
+
+.PHONY : src/rotation_and_move.o
+
+# target to build an object file
+src/rotation_and_move.c.o:
+	$(MAKE) -f CMakeFiles/Wolf3D.dir/build.make CMakeFiles/Wolf3D.dir/src/rotation_and_move.c.o
+.PHONY : src/rotation_and_move.c.o
+
+src/rotation_and_move.i: src/rotation_and_move.c.i
+
+.PHONY : src/rotation_and_move.i
+
+# target to preprocess a source file
+src/rotation_and_move.c.i:
+	$(MAKE) -f CMakeFiles/Wolf3D.dir/build.make CMakeFiles/Wolf3D.dir/src/rotation_and_move.c.i
+.PHONY : src/rotation_and_move.c.i
+
+src/rotation_and_move.s: src/rotation_and_move.c.s
+
+.PHONY : src/rotation_and_move.s
+
+# target to generate assembly for a file
+src/rotation_and_move.c.s:
+	$(MAKE) -f CMakeFiles/Wolf3D.dir/build.make CMakeFiles/Wolf3D.dir/src/rotation_and_move.c.s
+.PHONY : src/rotation_and_move.c.s
+
 src/utils.o: src/utils.c.o
 
 .PHONY : src/utils.o
@@ -2360,6 +2387,9 @@ help:
 	@echo "... src/print.o"
 	@echo "... src/print.i"
 	@echo "... src/print.s"
+	@echo "... src/rotation_and_move.o"
+	@echo "... src/rotation_and_move.i"
+	@echo "... src/rotation_and_move.s"
 	@echo "... src/utils.o"
 	@echo "... src/utils.i"
 	@echo "... src/utils.s"

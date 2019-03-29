@@ -7,5 +7,5 @@ set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -lmlx -framework OpenGL -framework AppKit")
 aux_source_directory(libft LIBFT_SRC)
 add_library(ft STATIC ${LIBFT_SRC} includes/wolf3d.h includes/errors.h)
 
-add_executable(Wolf3D src/main.c  src/draw.c src/preparation.c src/print.c src/utils.c src/validation.c src/init.c )
+add_executable(Wolf3D src/main.c  src/draw.c src/preparation.c src/print.c src/utils.c src/validation.c src/init.c src/rotation_and_move.c)
 target_link_libraries(Wolf3D ft)
