@@ -42,7 +42,31 @@ inttypes.h
 stdlib.h
 -
 
+/Users/ablizniu/Documents/Wolf3D/src/draw.c
+../includes/wolf3d.h
+/Users/ablizniu/Documents/Wolf3D/includes/wolf3d.h
+
+/Users/ablizniu/Documents/Wolf3D/src/init.c
+../includes/wolf3d.h
+/Users/ablizniu/Documents/Wolf3D/includes/wolf3d.h
+
 /Users/ablizniu/Documents/Wolf3D/src/main.c
+../includes/wolf3d.h
+/Users/ablizniu/Documents/Wolf3D/includes/wolf3d.h
+
+/Users/ablizniu/Documents/Wolf3D/src/preparation.c
+../includes/wolf3d.h
+/Users/ablizniu/Documents/Wolf3D/includes/wolf3d.h
+
+/Users/ablizniu/Documents/Wolf3D/src/print.c
+../includes/wolf3d.h
+/Users/ablizniu/Documents/Wolf3D/includes/wolf3d.h
+
+/Users/ablizniu/Documents/Wolf3D/src/rotation_and_move.c
+../includes/wolf3d.h
+/Users/ablizniu/Documents/Wolf3D/includes/wolf3d.h
+
+/Users/ablizniu/Documents/Wolf3D/src/validation.c
 ../includes/wolf3d.h
 /Users/ablizniu/Documents/Wolf3D/includes/wolf3d.h
 

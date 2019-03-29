@@ -6,7 +6,7 @@
 /*   By: ablizniu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/11 20:37:34 by ablizniu          #+#    #+#             */
-/*   Updated: 2019/03/29 15:05:01 by ablizniu         ###   ########.fr       */
+/*   Updated: 2019/03/29 19:28:31 by ablizniu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,11 +22,13 @@
 
 # define A_KEY 0
 # define D_KEY 2
+# define W_KEY 13
+# define S_KEY 1
 
 # define DEFAULT_TEXTURE		1
 # define DIMENSION				3
 # define DEFAULT_SCALE			64
-# define FIELD_OF_VIEW			66
+# define FIELD_OF_VIEW			60
 # define Z(f) f[2]
 # define Y(f) f[1]
 # define X(f) f[0]
@@ -92,15 +94,20 @@ typedef struct	__attribute__((packed))	s_wolf3d
 	size_t 				map_pos_y;
 	t_vector			ray;
 	t_vector			player[DIMENSION];
+	t_vector			direction[DIMENSION];
 	t_vector			basis[DIMENSION - 1];
 	t_texture			textures;
 	t_intersection		intersection;
 
 }						t_wolf3d;
 
-void		matrix_mult(t_wolf3d *wolf);
+void		movement(t_wolf3d *wolf, int32_t code);
 
-void		define_players_vectors(t_wolf3d *wolf);
+void		rotating(t_wolf3d *wolf, int32_t code);
+
+t_vector	vector_scaling(t_vector vector, double num);
+
+void		matrix_mult(t_wolf3d *wolf);
 
 int			keys(int code, t_wolf3d *wolf);
 

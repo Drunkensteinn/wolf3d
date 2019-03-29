@@ -6,7 +6,7 @@
 /*   By: ablizniu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/13 17:51:08 by ablizniu          #+#    #+#             */
-/*   Updated: 2019/03/29 15:30:27 by ablizniu         ###   ########.fr       */
+/*   Updated: 2019/03/29 18:22:26 by ablizniu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,17 +48,6 @@ void	matrix_mult(t_wolf3d *wolf)
 			X(A(wolf->player)) * Z(B(wolf->player)));
 	wolf->player[0][2] = (X(A(wolf->player)) * Y(B(wolf->player)) -
 			Y(A(wolf->player)) * X(B(wolf->player)));
-}
-
-void	define_players_vectors(t_wolf3d *wolf)
-{
-	long double distance;
-
-	distance = get_dist();
-	wolf->basis[0] = (t_vector){1, 0, 0};
-	wolf->basis[1] = (t_vector){0, 1, 0};
-	matrix_mult(wolf);/*right vector*/
-	Y(wolf->player[1]) = distance * Y(wolf->player[1]);
 }
 
 double	len_vector(long double x0, long double x1)
@@ -123,11 +112,11 @@ t_vector vector_scaling(t_vector vector, double num)
 void	define_ray_angle(t_wolf3d *wolf)
 {
 	wolf->ray = ft_zero_vector(wolf->ray);
-	wolf->ray = vector_scaling(wolf->player[0], wolf->x_column_fov - (double)W / 2);
-	wolf->ray += wolf->player[1];
-	wolf->ray = norm_vector(wolf->ray, len_vector(wolf->ray[0], wolf->ray[1]));
+	wolf->ray = vector_scaling(X(wolf->player), wolf->x_column_fov - (double)W / 2);
+	wolf->ray += vector_scaling(Y(wolf->player), get_dist());
+	wolf->ray = norm_vector(wolf->ray, len_vector(X(wolf->ray), Y(wolf->ray)));
 	define_current_delta_pos_x_y(wolf, wolf->ray);
-	wolf->curr_tan = FT_ABS(wolf->ray[1] / wolf->ray[0]);//могут быть траблы из-за тангенса inf или ноль
+	wolf->curr_tan = FT_ABS(Y(wolf->ray) / X(wolf->ray));//могут быть траблы из-за тангенса inf или ноль
 }
 
 void first_inter_x(t_wolf3d *wolf)
@@ -289,6 +278,7 @@ void	main_draw_function(t_wolf3d *wolf)
 //	define_ray_angle(wolf);
 //	ray_y = calculate_len_ray(wolf, &first_inter_y);
 //	ray_x = calculate_len_ray(wolf, &first_inter_x);
+	wolf->x_column_fov = 0;
 	while (wolf->x_column_fov < W)
 	{
 		define_ray_angle(wolf);
