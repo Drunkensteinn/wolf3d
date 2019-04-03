@@ -6,7 +6,7 @@
 /*   By: ablizniu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/11 20:37:34 by ablizniu          #+#    #+#             */
-/*   Updated: 2019/03/29 19:28:31 by ablizniu         ###   ########.fr       */
+/*   Updated: 2019/04/03 21:07:46 by ablizniu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,10 +25,12 @@
 # define W_KEY 13
 # define S_KEY 1
 
+# define ANGLE_BETWEEN_RAYS		((double)FIELD_OF_VIEW / W)
+
 # define DEFAULT_TEXTURE		1
 # define DIMENSION				3
 # define DEFAULT_SCALE			64
-# define FIELD_OF_VIEW			60
+# define FIELD_OF_VIEW			66
 # define Z(f) f[2]
 # define Y(f) f[1]
 # define X(f) f[0]
@@ -36,6 +38,8 @@
 # define B(f) f[2]
 # define H 720
 # define W 1080
+# define Y_RAY 1
+# define X_RAY 2
 
 typedef long double t_vector __attribute__((vector_size(sizeof(long double) * 3)));
 
@@ -74,6 +78,7 @@ typedef struct			s_intersection
 
 typedef struct	__attribute__((packed))	s_wolf3d
 {
+	double				total_angle;
 	struct s_map		**map;
 	struct s_mlx		*mlx;
 	double 				x_column_fov;
@@ -84,10 +89,8 @@ typedef struct	__attribute__((packed))	s_wolf3d
 	double				hit_coords_y;
 	double				player_coord_x;
 	double				player_coord_y;
-	double 				pos_delta_x;
-	double 				pos_delta_y;
-	double 				current_delta_x;
-	double 				current_delta_y;
+	double			current_delta_x;
+	double			current_delta_y;
 	size_t				x;
 	size_t				y;
 	size_t 				map_pos_x;
@@ -95,11 +98,20 @@ typedef struct	__attribute__((packed))	s_wolf3d
 	t_vector			ray;
 	t_vector			player[DIMENSION];
 	t_vector			direction[DIMENSION];
-	t_vector			basis[DIMENSION - 1];
 	t_texture			textures;
 	t_intersection		intersection;
 
 }						t_wolf3d;
+
+void draw_wall(t_wolf3d *wolf, double len, int32_t attribute);
+
+t_bool		check_first_inter(t_wolf3d *wolf, double x, double y);
+
+size_t 		transfer_coords_x(t_wolf3d *wolf, double x);
+
+size_t		transfer_coords_y(t_wolf3d *wolf, double y);
+
+void		check(t_wolf3d *wolf, double x, double y, int32_t *hit);
 
 void		movement(t_wolf3d *wolf, int32_t code);
 
