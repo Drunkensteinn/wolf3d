@@ -17,4 +17,6 @@
 
 # define INVALID_MAP "Error. Invalid map."
 
+# define ERROR_ALLOCATION "Error. Cannot allocate memory region."
+
 #endif

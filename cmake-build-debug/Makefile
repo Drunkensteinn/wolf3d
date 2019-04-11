@@ -2107,6 +2107,33 @@ src/rotation_and_move.c.s:
 	$(MAKE) -f CMakeFiles/Wolf3D.dir/build.make CMakeFiles/Wolf3D.dir/src/rotation_and_move.c.s
 .PHONY : src/rotation_and_move.c.s
 
+src/textures.o: src/textures.c.o
+
+.PHONY : src/textures.o
+
+# target to build an object file
+src/textures.c.o:
+	$(MAKE) -f CMakeFiles/Wolf3D.dir/build.make CMakeFiles/Wolf3D.dir/src/textures.c.o
+.PHONY : src/textures.c.o
+
+src/textures.i: src/textures.c.i
+
+.PHONY : src/textures.i
+
+# target to preprocess a source file
+src/textures.c.i:
+	$(MAKE) -f CMakeFiles/Wolf3D.dir/build.make CMakeFiles/Wolf3D.dir/src/textures.c.i
+.PHONY : src/textures.c.i
+
+src/textures.s: src/textures.c.s
+
+.PHONY : src/textures.s
+
+# target to generate assembly for a file
+src/textures.c.s:
+	$(MAKE) -f CMakeFiles/Wolf3D.dir/build.make CMakeFiles/Wolf3D.dir/src/textures.c.s
+.PHONY : src/textures.c.s
+
 src/utils.o: src/utils.c.o
 
 .PHONY : src/utils.o
@@ -2390,6 +2417,9 @@ help:
 	@echo "... src/rotation_and_move.o"
 	@echo "... src/rotation_and_move.i"
 	@echo "... src/rotation_and_move.s"
+	@echo "... src/textures.o"
+	@echo "... src/textures.i"
+	@echo "... src/textures.s"
 	@echo "... src/utils.o"
 	@echo "... src/utils.i"
 	@echo "... src/utils.s"

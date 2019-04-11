@@ -31,6 +31,11 @@ CMakeFiles/Wolf3D.dir/src/rotation_and_move.c.o: ../includes/wolf3d.h
 CMakeFiles/Wolf3D.dir/src/rotation_and_move.c.o: ../libft/libft.h
 CMakeFiles/Wolf3D.dir/src/rotation_and_move.c.o: ../src/rotation_and_move.c
 
+CMakeFiles/Wolf3D.dir/src/textures.c.o: ../includes/errors.h
+CMakeFiles/Wolf3D.dir/src/textures.c.o: ../includes/wolf3d.h
+CMakeFiles/Wolf3D.dir/src/textures.c.o: ../libft/libft.h
+CMakeFiles/Wolf3D.dir/src/textures.c.o: ../src/textures.c
+
 CMakeFiles/Wolf3D.dir/src/utils.c.o: ../src/utils.c
 
 CMakeFiles/Wolf3D.dir/src/validation.c.o: ../includes/errors.h

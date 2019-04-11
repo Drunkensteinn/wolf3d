@@ -347,6 +347,9 @@
 		<Unit filename="/Users/ablizniu/Documents/Wolf3D/src/rotation_and_move.c">
 			<Option target="Wolf3D"/>
 		</Unit>
+		<Unit filename="/Users/ablizniu/Documents/Wolf3D/src/textures.c">
+			<Option target="Wolf3D"/>
+		</Unit>
 		<Unit filename="/Users/ablizniu/Documents/Wolf3D/src/utils.c">
 			<Option target="Wolf3D"/>
 		</Unit>

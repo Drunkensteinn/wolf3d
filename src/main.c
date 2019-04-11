@@ -6,7 +6,7 @@
 /*   By: ablizniu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/11 20:37:40 by ablizniu          #+#    #+#             */
-/*   Updated: 2019/04/03 13:31:08 by ablizniu         ###   ########.fr       */
+/*   Updated: 2019/04/08 21:36:54 by ablizniu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	init_the_game(t_wolf3d *wolf)
 {
 	wolf->player[2] = (t_vector){0, 0, 1};
-	wolf->player[1] = (t_vector){-0.4337 , -0.856168, 0};
+	wolf->player[1] = (t_vector){-1, 0, 0};
 	matrix_mult(wolf);
 	main_draw_function(wolf);
 }

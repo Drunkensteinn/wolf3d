@@ -6,7 +6,7 @@
 /*   By: ablizniu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/29 14:32:17 by ablizniu          #+#    #+#             */
-/*   Updated: 2019/04/03 14:39:23 by ablizniu         ###   ########.fr       */
+/*   Updated: 2019/04/11 14:51:39 by ablizniu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,32 +43,38 @@ void	rotating(t_wolf3d *wolf, int32_t code)
 		wolf->player[1][0] = x * cos((5.9 * M_PI) / 180) + y * sin((5.9 * M_PI) / 180);
 		wolf->player[1][1] = (-x * sin((5.9 * M_PI) / 180)) + y * cos((5.9 * M_PI) / 180);
 	}
-	printf("vectors - x: %G y: %G \n" , (double)wolf->player[1][0], (double)wolf->player[1][1]);
 }
 
 void	make_step(t_wolf3d *wolf, t_bool direction)
 {
 	if (direction)
 	{
-		wolf->player_coord_y += 10;
-//		wolf->map_pos_y = (size_t)(wolf->player_coord_y / DEFAULT_SCALE);
+		if (wolf->map[(int32_t)(wolf->player_coord_y + 10 * wolf->player[1][1])
+		/ DEFAULT_SCALE][(int32_t)(wolf->player_coord_x)
+		/ DEFAULT_SCALE].texture == 0)
+			wolf->player_coord_y += 10 * wolf->player[1][1];
+		if (wolf->map[(int32_t)(wolf->player_coord_y) / DEFAULT_SCALE]
+		[(int32_t)(wolf->player_coord_x + 10 * wolf->player[1][0])
+		/ DEFAULT_SCALE].texture == 0)
+			wolf->player_coord_x += 10 * wolf->player[1][0];
 	}
 	else
 	{
-		wolf->player_coord_y -= 10;
-//		wolf->map_pos_y = (size_t)(wolf->player_coord_y / DEFAULT_SCALE);
+		if (wolf->map[(int32_t)(wolf->player_coord_y - 10 * wolf->player[1][1])
+		/ DEFAULT_SCALE][(int32_t)(wolf->player_coord_x)
+		/ DEFAULT_SCALE].texture == 0)
+			wolf->player_coord_y -= 10 * wolf->player[1][1];
+		if (wolf->map[(int32_t)(wolf->player_coord_y) / DEFAULT_SCALE]
+		[(int32_t)(wolf->player_coord_x - 10 * wolf->player[1][0])
+		/ DEFAULT_SCALE].texture == 0)
+			wolf->player_coord_x -= 10 * wolf->player[1][0];
 	}
-	printf("vectors - x: %f y: %f \n" , wolf->player_coord_x, wolf->player_coord_y);
 }
 
 void	movement(t_wolf3d *wolf, int32_t code)
 {
 	if (code == W_KEY)
-	{
 		make_step(wolf, 1);
-	}
 	else if (code == S_KEY)
-	{
 		make_step(wolf, 0);
-	}
 }

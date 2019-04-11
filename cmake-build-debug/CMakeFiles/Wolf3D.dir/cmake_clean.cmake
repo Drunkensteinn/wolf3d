@@ -7,6 +7,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Wolf3D.dir/src/validation.c.o"
   "CMakeFiles/Wolf3D.dir/src/init.c.o"
   "CMakeFiles/Wolf3D.dir/src/rotation_and_move.c.o"
+  "CMakeFiles/Wolf3D.dir/src/textures.c.o"
   "Wolf3D.pdb"
   "Wolf3D"
 )
