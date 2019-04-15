@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #ifndef ERRORS_H
-#define ERRORS_H
+# define ERRORS_H
 
 # define BAD_ACCESS "Error. Bad aссess."
 

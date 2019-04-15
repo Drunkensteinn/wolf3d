@@ -14,7 +14,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Wolf3D.dir/src/validation_list_utils.c.o"
   "CMakeFiles/Wolf3D.dir/src/validation_fill.c.o"
   "CMakeFiles/Wolf3D.dir/src/validation_source.c.o"
-  "CMakeFiles/Wolf3D.dir/src/key_kontroller.c.o"
+  "CMakeFiles/Wolf3D.dir/src/key_controller.c.o"
   "CMakeFiles/Wolf3D.dir/src/draw_calculations.c.o"
   "CMakeFiles/Wolf3D.dir/src/draw_textures.c.o"
   "CMakeFiles/Wolf3D.dir/src/intersection_algorithm.c.o"

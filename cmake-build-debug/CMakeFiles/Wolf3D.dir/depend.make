@@ -49,11 +49,11 @@ CMakeFiles/Wolf3D.dir/src/intersection_algorithm_extra.c.o: ../includes/wolf3d.h
 CMakeFiles/Wolf3D.dir/src/intersection_algorithm_extra.c.o: ../libft/libft.h
 CMakeFiles/Wolf3D.dir/src/intersection_algorithm_extra.c.o: ../src/intersection_algorithm_extra.c
 
-CMakeFiles/Wolf3D.dir/src/key_kontroller.c.o: ../includes/errors.h
-CMakeFiles/Wolf3D.dir/src/key_kontroller.c.o: ../includes/keys.h
-CMakeFiles/Wolf3D.dir/src/key_kontroller.c.o: ../includes/wolf3d.h
-CMakeFiles/Wolf3D.dir/src/key_kontroller.c.o: ../libft/libft.h
-CMakeFiles/Wolf3D.dir/src/key_kontroller.c.o: ../src/key_kontroller.c
+CMakeFiles/Wolf3D.dir/src/key_controller.c.o: ../includes/errors.h
+CMakeFiles/Wolf3D.dir/src/key_controller.c.o: ../includes/keys.h
+CMakeFiles/Wolf3D.dir/src/key_controller.c.o: ../includes/wolf3d.h
+CMakeFiles/Wolf3D.dir/src/key_controller.c.o: ../libft/libft.h
+CMakeFiles/Wolf3D.dir/src/key_controller.c.o: ../src/key_controller.c
 
 CMakeFiles/Wolf3D.dir/src/main.c.o: ../includes/errors.h
 CMakeFiles/Wolf3D.dir/src/main.c.o: ../includes/keys.h

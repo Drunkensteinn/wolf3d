@@ -12,7 +12,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/ablizniu/Documents/Wolf3D/src/init.c" "/Users/ablizniu/Documents/Wolf3D/cmake-build-debug/CMakeFiles/Wolf3D.dir/src/init.c.o"
   "/Users/ablizniu/Documents/Wolf3D/src/intersection_algorithm.c" "/Users/ablizniu/Documents/Wolf3D/cmake-build-debug/CMakeFiles/Wolf3D.dir/src/intersection_algorithm.c.o"
   "/Users/ablizniu/Documents/Wolf3D/src/intersection_algorithm_extra.c" "/Users/ablizniu/Documents/Wolf3D/cmake-build-debug/CMakeFiles/Wolf3D.dir/src/intersection_algorithm_extra.c.o"
-  "/Users/ablizniu/Documents/Wolf3D/src/key_kontroller.c" "/Users/ablizniu/Documents/Wolf3D/cmake-build-debug/CMakeFiles/Wolf3D.dir/src/key_kontroller.c.o"
+  "/Users/ablizniu/Documents/Wolf3D/src/key_controller.c" "/Users/ablizniu/Documents/Wolf3D/cmake-build-debug/CMakeFiles/Wolf3D.dir/src/key_controller.c.o"
   "/Users/ablizniu/Documents/Wolf3D/src/main.c" "/Users/ablizniu/Documents/Wolf3D/cmake-build-debug/CMakeFiles/Wolf3D.dir/src/main.c.o"
   "/Users/ablizniu/Documents/Wolf3D/src/preparation.c" "/Users/ablizniu/Documents/Wolf3D/cmake-build-debug/CMakeFiles/Wolf3D.dir/src/preparation.c.o"
   "/Users/ablizniu/Documents/Wolf3D/src/preparation_utils.c" "/Users/ablizniu/Documents/Wolf3D/cmake-build-debug/CMakeFiles/Wolf3D.dir/src/preparation_utils.c.o"

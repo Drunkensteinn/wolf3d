@@ -252,18 +252,18 @@ CMakeFiles/Wolf3D.dir/src/validation_source.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Wolf3D.dir/src/validation_source.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ablizniu/Documents/Wolf3D/src/validation_source.c -o CMakeFiles/Wolf3D.dir/src/validation_source.c.s
 
-CMakeFiles/Wolf3D.dir/src/key_kontroller.c.o: CMakeFiles/Wolf3D.dir/flags.make
-CMakeFiles/Wolf3D.dir/src/key_kontroller.c.o: ../src/key_kontroller.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ablizniu/Documents/Wolf3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/Wolf3D.dir/src/key_kontroller.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Wolf3D.dir/src/key_kontroller.c.o   -c /Users/ablizniu/Documents/Wolf3D/src/key_kontroller.c
+CMakeFiles/Wolf3D.dir/src/key_controller.c.o: CMakeFiles/Wolf3D.dir/flags.make
+CMakeFiles/Wolf3D.dir/src/key_controller.c.o: ../src/key_controller.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ablizniu/Documents/Wolf3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/Wolf3D.dir/src/key_controller.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Wolf3D.dir/src/key_controller.c.o   -c /Users/ablizniu/Documents/Wolf3D/src/key_controller.c
 
-CMakeFiles/Wolf3D.dir/src/key_kontroller.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Wolf3D.dir/src/key_kontroller.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ablizniu/Documents/Wolf3D/src/key_kontroller.c > CMakeFiles/Wolf3D.dir/src/key_kontroller.c.i
+CMakeFiles/Wolf3D.dir/src/key_controller.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Wolf3D.dir/src/key_controller.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ablizniu/Documents/Wolf3D/src/key_controller.c > CMakeFiles/Wolf3D.dir/src/key_controller.c.i
 
-CMakeFiles/Wolf3D.dir/src/key_kontroller.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Wolf3D.dir/src/key_kontroller.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ablizniu/Documents/Wolf3D/src/key_kontroller.c -o CMakeFiles/Wolf3D.dir/src/key_kontroller.c.s
+CMakeFiles/Wolf3D.dir/src/key_controller.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Wolf3D.dir/src/key_controller.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ablizniu/Documents/Wolf3D/src/key_controller.c -o CMakeFiles/Wolf3D.dir/src/key_controller.c.s
 
 CMakeFiles/Wolf3D.dir/src/draw_calculations.c.o: CMakeFiles/Wolf3D.dir/flags.make
 CMakeFiles/Wolf3D.dir/src/draw_calculations.c.o: ../src/draw_calculations.c
@@ -347,7 +347,7 @@ Wolf3D_OBJECTS = \
 "CMakeFiles/Wolf3D.dir/src/validation_list_utils.c.o" \
 "CMakeFiles/Wolf3D.dir/src/validation_fill.c.o" \
 "CMakeFiles/Wolf3D.dir/src/validation_source.c.o" \
-"CMakeFiles/Wolf3D.dir/src/key_kontroller.c.o" \
+"CMakeFiles/Wolf3D.dir/src/key_controller.c.o" \
 "CMakeFiles/Wolf3D.dir/src/draw_calculations.c.o" \
 "CMakeFiles/Wolf3D.dir/src/draw_textures.c.o" \
 "CMakeFiles/Wolf3D.dir/src/intersection_algorithm.c.o" \
@@ -372,7 +372,7 @@ Wolf3D: CMakeFiles/Wolf3D.dir/src/validation_utils.c.o
 Wolf3D: CMakeFiles/Wolf3D.dir/src/validation_list_utils.c.o
 Wolf3D: CMakeFiles/Wolf3D.dir/src/validation_fill.c.o
 Wolf3D: CMakeFiles/Wolf3D.dir/src/validation_source.c.o
-Wolf3D: CMakeFiles/Wolf3D.dir/src/key_kontroller.c.o
+Wolf3D: CMakeFiles/Wolf3D.dir/src/key_controller.c.o
 Wolf3D: CMakeFiles/Wolf3D.dir/src/draw_calculations.c.o
 Wolf3D: CMakeFiles/Wolf3D.dir/src/draw_textures.c.o
 Wolf3D: CMakeFiles/Wolf3D.dir/src/intersection_algorithm.c.o

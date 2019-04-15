@@ -6,71 +6,111 @@
 #    By: ablizniu <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/04/15 12:38:51 by ablizniu          #+#    #+#              #
-#    Updated: 2019/04/15 12:56:32 by ablizniu         ###   ########.fr        #
+#    Updated: 2019/04/15 14:28:15 by ablizniu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME := wolf3d
-LIB_PATH := libft/
-HDRS_PATH := includes/
-OBJ_PATH := ./obj/objs/
+WOLF_NAME = wolf3d
 
-CC := clang
-FLAGS := -Wall -Wextra -Werror -O3  -lmlx -framework OpenGL -framework AppKit
-IFLAGS := -I $(HDRS_PATH) -I $(LIB_PATH)
-LFLAGS := -lft -L $(LIB_PATH)
+CC = gcc
+FLAGS = -Wall -Werror -Wextra -O3
 
-LIB := $(LIB_PATH)libft.a
-HDRS := errors keys wolf3d
-FILES := draw \
-		draw_calculations \
-		draw_textures \
-		draw_untextured \
-		draw_utils \
-		init \
-		intersection_algorithm \
-		intersection_algorithm_extra \
-		key_kontroller \
-		main \
-		preparation \
-		preparation_utils \
-		print \
-		rotation_and_move \
-		textures \
-		validation \
-		validation_fill \
-		validation_list_utils \
-		validation_source \
-		validation_utils \
-		vector_utils
+# Libraries and Includes
 
-SRCS += $(addsuffix .c, $(FILES))
-HDRS :=	$(addprefix $(HDRS_PATH), $(addsuffix .h, $(HDRS)))
-OBJS := $(addprefix $(OBJ_PATH), $(SRCS:%.c=%.o))
+WOLF_LIBRARIES = -lmlx -framework OpenGL -framework AppKit
+WOLF_INCLUDES = \
+	-I$(HEADERS_DIRECTORY)\
+	-I$(LIBFT_HEADERS)\
 
-all: $(NAME)
+LIBFT = $(LIBFT_DIRECTORY)libft.a
+LIBFT_DIRECTORY = ./libft/
+LIBFT_HEADERS = $(LIBFT_DIRECTORY)
 
-$(NAME): $(LIB) $(OBJ_PATH) $(OBJS)
-				$(CC) $(FLAGS) $(IFLAGS) $(LFLAGS) $(OBJS) -o $(NAME)
 
-$(LIB):
-				$(MAKE) -C $(dir $@) $(notdir $@)
+# Headers
 
-$(OBJ_PATH):
-				mkdir -p $(OBJ_PATH)
+HEADERS_DIRECTORY = ./includes/
 
-$(OBJ_PATH)%.o: %.c $(HDRS)
-				$(CC) $(CFLAGS) $(IFLAGS) -c $< -o $@
+WOLF_HEADERS_LIST = \
+	wolf3d.h \
+	keys.h \
+	errors.h
+WOLF_HEADERS = $(addprefix $(HEADERS_DIRECTORY), $(WOLF_HEADERS_LIST))
+
+# Sources
+
+WOLF_SOURCES_DIRECTORY = ./src/
+WOLF_SOURCES_LIST = \
+				draw.c \
+				draw_calculations.c \
+				draw_textures.c \
+				draw_untextured.c \
+				draw_utils.c \
+				init.c \
+				intersection_algorithm.c \
+				intersection_algorithm_extra.c \
+				key_controller.c \
+				main.c \
+				preparation.c \
+				preparation_utils.c \
+				print.c \
+				rotation_and_move.c \
+				textures.c \
+				validation.c \
+				validation_fill.c \
+				validation_list_utils.c \
+				validation_source.c \
+				validation_utils.c \
+				vector_utils.c
+WOLF_SOURCES = $(addprefix $(WOLF_SOURCES_DIRECTORY), $(WOLF_SOURCES_LIST))
+
+# Objects
+
+OBJECTS_DIRECTORY = ./objects/
+
+
+WOLF_OBJECTS_DIRECTORY = $(OBJECTS_DIRECTORY)wolf/
+WOLF_OBJECTS_LIST = $(patsubst %.c, %.o, $(WOLF_SOURCES_LIST))
+WOLF_OBJECTS	= $(addprefix $(WOLF_OBJECTS_DIRECTORY), $(WOLF_OBJECTS_LIST))
+
+# COLORS
+
+GREEN = \033[0;32m
+RED = \033[0;31m
+RESET = \033[0m
+
+.PHONY: all clean fclean re
+
+all: $(WOLF_NAME)
+
+$(WOLF_NAME): $(LIBFT) $(WOLF_OBJECTS_DIRECTORY) $(WOLF_OBJECTS)
+	@$(CC) $(FLAGS) $(LIBFT) $(WOLF_LIBRARIES) $(WOLF_INCLUDES) $(WOLF_OBJECTS) -o $(WOLF_NAME)
+	@echo "\n$(WOLF_NAME): $(GREEN)object files were created$(RESET)"
+	@echo "$(WOLF_NAME): $(GREEN)$(WOLF_NAME) was created$(RESET)"
+
+$(WOLF_OBJECTS_DIRECTORY):
+	@mkdir -p $(WOLF_OBJECTS_DIRECTORY)
+	@echo "$(WOLF_NAME): $(GREEN)$(WOLF_OBJECTS_DIRECTORY) was created$(RESET)"
+
+$(WOLF_OBJECTS_DIRECTORY)%.o : $(WOLF_SOURCES_DIRECTORY)%.c $(WOLF_HEADERS)
+	@$(CC) $(FLAGS) -c $(WOLF_INCLUDES) $< -o $@
+	@echo "$(GREEN).$(RESET)\c"
+
+$(LIBFT):
+	@echo "$(GREEN)$(LIBFT) was created$(RESET)"
+	@$(MAKE) -C $(LIBFT_DIRECTORY)
 
 clean:
-				@rm -rf $(OBJS)
-				@$(MAKE) -sC $(LIB_PATH) clean
+	@rm -rf $(OBJECTS_DIRECTORY)
+	@$(MAKE) -sC $(LIBFT_DIRECTORY) clean
+	@echo "$(WOLF_NAME): $(RED)$(OBJECTS_DIRECTORY) was deleted$(RESET)"
+	@echo "$(WOLF_NAME): $(RED)object files were deleted$(RESET)"
 
 fclean: clean
-				@rm -rf $(NAME)
-				@rm -rf $(OBJ_PATH) $(OBJS) obj/
-				@$(MAKE) -sC $(LIB_PATH) fclean
+	@rm -f $(WOLF_NAME)
+	@$(MAKE) -sC $(LIBFT_DIRECTORY) fclean
+	@echo "$(WOLF_NAME): $(RED)$(WOLF_NAME) was deleted$(RESET)"
 
 re:
-				@$(MAKE) fclean
-				@$(MAKE) all
+	@$(MAKE) fclean
+	@$(MAKE) all

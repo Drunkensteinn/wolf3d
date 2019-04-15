@@ -356,7 +356,7 @@
 		<Unit filename="/Users/ablizniu/Documents/Wolf3D/src/intersection_algorithm_extra.c">
 			<Option target="Wolf3D"/>
 		</Unit>
-		<Unit filename="/Users/ablizniu/Documents/Wolf3D/src/key_kontroller.c">
+		<Unit filename="/Users/ablizniu/Documents/Wolf3D/src/key_controller.c">
 			<Option target="Wolf3D"/>
 		</Unit>
 		<Unit filename="/Users/ablizniu/Documents/Wolf3D/src/main.c">

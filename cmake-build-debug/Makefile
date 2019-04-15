@@ -2161,32 +2161,32 @@ src/intersection_algorithm_extra.c.s:
 	$(MAKE) -f CMakeFiles/Wolf3D.dir/build.make CMakeFiles/Wolf3D.dir/src/intersection_algorithm_extra.c.s
 .PHONY : src/intersection_algorithm_extra.c.s
 
-src/key_kontroller.o: src/key_kontroller.c.o
+src/key_controller.o: src/key_controller.c.o
 
-.PHONY : src/key_kontroller.o
+.PHONY : src/key_controller.o
 
 # target to build an object file
-src/key_kontroller.c.o:
-	$(MAKE) -f CMakeFiles/Wolf3D.dir/build.make CMakeFiles/Wolf3D.dir/src/key_kontroller.c.o
-.PHONY : src/key_kontroller.c.o
+src/key_controller.c.o:
+	$(MAKE) -f CMakeFiles/Wolf3D.dir/build.make CMakeFiles/Wolf3D.dir/src/key_controller.c.o
+.PHONY : src/key_controller.c.o
 
-src/key_kontroller.i: src/key_kontroller.c.i
+src/key_controller.i: src/key_controller.c.i
 
-.PHONY : src/key_kontroller.i
+.PHONY : src/key_controller.i
 
 # target to preprocess a source file
-src/key_kontroller.c.i:
-	$(MAKE) -f CMakeFiles/Wolf3D.dir/build.make CMakeFiles/Wolf3D.dir/src/key_kontroller.c.i
-.PHONY : src/key_kontroller.c.i
+src/key_controller.c.i:
+	$(MAKE) -f CMakeFiles/Wolf3D.dir/build.make CMakeFiles/Wolf3D.dir/src/key_controller.c.i
+.PHONY : src/key_controller.c.i
 
-src/key_kontroller.s: src/key_kontroller.c.s
+src/key_controller.s: src/key_controller.c.s
 
-.PHONY : src/key_kontroller.s
+.PHONY : src/key_controller.s
 
 # target to generate assembly for a file
-src/key_kontroller.c.s:
-	$(MAKE) -f CMakeFiles/Wolf3D.dir/build.make CMakeFiles/Wolf3D.dir/src/key_kontroller.c.s
-.PHONY : src/key_kontroller.c.s
+src/key_controller.c.s:
+	$(MAKE) -f CMakeFiles/Wolf3D.dir/build.make CMakeFiles/Wolf3D.dir/src/key_controller.c.s
+.PHONY : src/key_controller.c.s
 
 src/main.o: src/main.c.o
 
@@ -2747,9 +2747,9 @@ help:
 	@echo "... src/intersection_algorithm_extra.o"
 	@echo "... src/intersection_algorithm_extra.i"
 	@echo "... src/intersection_algorithm_extra.s"
-	@echo "... src/key_kontroller.o"
-	@echo "... src/key_kontroller.i"
-	@echo "... src/key_kontroller.s"
+	@echo "... src/key_controller.o"
+	@echo "... src/key_controller.i"
+	@echo "... src/key_controller.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

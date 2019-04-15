@@ -49,12 +49,12 @@ CMakeFiles/Wolf3D.dir/src/intersection_algorithm_extra.c.o
  /Users/ablizniu/Documents/Wolf3D/includes/wolf3d.h
  /Users/ablizniu/Documents/Wolf3D/libft/libft.h
  /Users/ablizniu/Documents/Wolf3D/src/intersection_algorithm_extra.c
-CMakeFiles/Wolf3D.dir/src/key_kontroller.c.o
+CMakeFiles/Wolf3D.dir/src/key_controller.c.o
  /Users/ablizniu/Documents/Wolf3D/includes/errors.h
  /Users/ablizniu/Documents/Wolf3D/includes/keys.h
  /Users/ablizniu/Documents/Wolf3D/includes/wolf3d.h
  /Users/ablizniu/Documents/Wolf3D/libft/libft.h
- /Users/ablizniu/Documents/Wolf3D/src/key_kontroller.c
+ /Users/ablizniu/Documents/Wolf3D/src/key_controller.c
 CMakeFiles/Wolf3D.dir/src/main.c.o
  /Users/ablizniu/Documents/Wolf3D/includes/errors.h
  /Users/ablizniu/Documents/Wolf3D/includes/keys.h

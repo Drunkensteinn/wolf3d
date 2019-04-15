@@ -6,7 +6,7 @@
 /*   By: ablizniu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/14 22:53:56 by ablizniu          #+#    #+#             */
-/*   Updated: 2019/04/15 12:02:15 by ablizniu         ###   ########.fr       */
+/*   Updated: 2019/04/15 14:36:10 by ablizniu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ void			texture_draw(t_wolf3d *wolf, double height)
 			(int32_t)(DEFAULT_SCALE * index_y + index_x) * 4));
 		i++;
 	}
-	floor_celling_draw(wolf, i, height);
+	floor_celling_draw(wolf, i);
 }
 
 static void		calculate_floor_celling(t_wolf3d *wolf, t_vector vector,
@@ -55,8 +55,7 @@ static void		calculate_floor_celling(t_wolf3d *wolf, t_vector vector,
 			(int32_t)(DEFAULT_SCALE * map_y + map_x) * 4));
 }
 
-void			floor_celling_draw(t_wolf3d *wolf, int32_t end_of_wall,
-				double heigth)
+void			floor_celling_draw(t_wolf3d *wolf, int32_t end_of_wall)
 {
 	double		dist;
 	double		dist_pl;
