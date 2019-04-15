@@ -8,6 +8,8 @@
 
 /Users/ablizniu/Documents/Wolf3D/includes/errors.h
 
+/Users/ablizniu/Documents/Wolf3D/includes/keys.h
+
 /Users/ablizniu/Documents/Wolf3D/includes/wolf3d.h
 ../libft/libft.h
 /Users/ablizniu/Documents/Wolf3D/libft/libft.h
@@ -19,8 +21,12 @@ limits.h
 -
 math.h
 -
+time.h
+-
 errors.h
 /Users/ablizniu/Documents/Wolf3D/includes/errors.h
+keys.h
+/Users/ablizniu/Documents/Wolf3D/includes/keys.h
 
 /Users/ablizniu/Documents/Wolf3D/libft/libft.h
 unistd.h

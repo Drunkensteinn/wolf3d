@@ -109,18 +109,18 @@ CMakeFiles/Wolf3D.dir/src/print.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Wolf3D.dir/src/print.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ablizniu/Documents/Wolf3D/src/print.c -o CMakeFiles/Wolf3D.dir/src/print.c.s
 
-CMakeFiles/Wolf3D.dir/src/utils.c.o: CMakeFiles/Wolf3D.dir/flags.make
-CMakeFiles/Wolf3D.dir/src/utils.c.o: ../src/utils.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ablizniu/Documents/Wolf3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Wolf3D.dir/src/utils.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Wolf3D.dir/src/utils.c.o   -c /Users/ablizniu/Documents/Wolf3D/src/utils.c
+CMakeFiles/Wolf3D.dir/src/draw_utils.c.o: CMakeFiles/Wolf3D.dir/flags.make
+CMakeFiles/Wolf3D.dir/src/draw_utils.c.o: ../src/draw_utils.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ablizniu/Documents/Wolf3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Wolf3D.dir/src/draw_utils.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Wolf3D.dir/src/draw_utils.c.o   -c /Users/ablizniu/Documents/Wolf3D/src/draw_utils.c
 
-CMakeFiles/Wolf3D.dir/src/utils.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Wolf3D.dir/src/utils.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ablizniu/Documents/Wolf3D/src/utils.c > CMakeFiles/Wolf3D.dir/src/utils.c.i
+CMakeFiles/Wolf3D.dir/src/draw_utils.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Wolf3D.dir/src/draw_utils.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ablizniu/Documents/Wolf3D/src/draw_utils.c > CMakeFiles/Wolf3D.dir/src/draw_utils.c.i
 
-CMakeFiles/Wolf3D.dir/src/utils.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Wolf3D.dir/src/utils.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ablizniu/Documents/Wolf3D/src/utils.c -o CMakeFiles/Wolf3D.dir/src/utils.c.s
+CMakeFiles/Wolf3D.dir/src/draw_utils.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Wolf3D.dir/src/draw_utils.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ablizniu/Documents/Wolf3D/src/draw_utils.c -o CMakeFiles/Wolf3D.dir/src/draw_utils.c.s
 
 CMakeFiles/Wolf3D.dir/src/validation.c.o: CMakeFiles/Wolf3D.dir/flags.make
 CMakeFiles/Wolf3D.dir/src/validation.c.o: ../src/validation.c
@@ -174,17 +174,185 @@ CMakeFiles/Wolf3D.dir/src/textures.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Wolf3D.dir/src/textures.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ablizniu/Documents/Wolf3D/src/textures.c -o CMakeFiles/Wolf3D.dir/src/textures.c.s
 
+CMakeFiles/Wolf3D.dir/src/preparation_utils.c.o: CMakeFiles/Wolf3D.dir/flags.make
+CMakeFiles/Wolf3D.dir/src/preparation_utils.c.o: ../src/preparation_utils.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ablizniu/Documents/Wolf3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/Wolf3D.dir/src/preparation_utils.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Wolf3D.dir/src/preparation_utils.c.o   -c /Users/ablizniu/Documents/Wolf3D/src/preparation_utils.c
+
+CMakeFiles/Wolf3D.dir/src/preparation_utils.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Wolf3D.dir/src/preparation_utils.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ablizniu/Documents/Wolf3D/src/preparation_utils.c > CMakeFiles/Wolf3D.dir/src/preparation_utils.c.i
+
+CMakeFiles/Wolf3D.dir/src/preparation_utils.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Wolf3D.dir/src/preparation_utils.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ablizniu/Documents/Wolf3D/src/preparation_utils.c -o CMakeFiles/Wolf3D.dir/src/preparation_utils.c.s
+
+CMakeFiles/Wolf3D.dir/src/vector_utils.c.o: CMakeFiles/Wolf3D.dir/flags.make
+CMakeFiles/Wolf3D.dir/src/vector_utils.c.o: ../src/vector_utils.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ablizniu/Documents/Wolf3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/Wolf3D.dir/src/vector_utils.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Wolf3D.dir/src/vector_utils.c.o   -c /Users/ablizniu/Documents/Wolf3D/src/vector_utils.c
+
+CMakeFiles/Wolf3D.dir/src/vector_utils.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Wolf3D.dir/src/vector_utils.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ablizniu/Documents/Wolf3D/src/vector_utils.c > CMakeFiles/Wolf3D.dir/src/vector_utils.c.i
+
+CMakeFiles/Wolf3D.dir/src/vector_utils.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Wolf3D.dir/src/vector_utils.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ablizniu/Documents/Wolf3D/src/vector_utils.c -o CMakeFiles/Wolf3D.dir/src/vector_utils.c.s
+
+CMakeFiles/Wolf3D.dir/src/validation_utils.c.o: CMakeFiles/Wolf3D.dir/flags.make
+CMakeFiles/Wolf3D.dir/src/validation_utils.c.o: ../src/validation_utils.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ablizniu/Documents/Wolf3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/Wolf3D.dir/src/validation_utils.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Wolf3D.dir/src/validation_utils.c.o   -c /Users/ablizniu/Documents/Wolf3D/src/validation_utils.c
+
+CMakeFiles/Wolf3D.dir/src/validation_utils.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Wolf3D.dir/src/validation_utils.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ablizniu/Documents/Wolf3D/src/validation_utils.c > CMakeFiles/Wolf3D.dir/src/validation_utils.c.i
+
+CMakeFiles/Wolf3D.dir/src/validation_utils.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Wolf3D.dir/src/validation_utils.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ablizniu/Documents/Wolf3D/src/validation_utils.c -o CMakeFiles/Wolf3D.dir/src/validation_utils.c.s
+
+CMakeFiles/Wolf3D.dir/src/validation_list_utils.c.o: CMakeFiles/Wolf3D.dir/flags.make
+CMakeFiles/Wolf3D.dir/src/validation_list_utils.c.o: ../src/validation_list_utils.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ablizniu/Documents/Wolf3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/Wolf3D.dir/src/validation_list_utils.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Wolf3D.dir/src/validation_list_utils.c.o   -c /Users/ablizniu/Documents/Wolf3D/src/validation_list_utils.c
+
+CMakeFiles/Wolf3D.dir/src/validation_list_utils.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Wolf3D.dir/src/validation_list_utils.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ablizniu/Documents/Wolf3D/src/validation_list_utils.c > CMakeFiles/Wolf3D.dir/src/validation_list_utils.c.i
+
+CMakeFiles/Wolf3D.dir/src/validation_list_utils.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Wolf3D.dir/src/validation_list_utils.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ablizniu/Documents/Wolf3D/src/validation_list_utils.c -o CMakeFiles/Wolf3D.dir/src/validation_list_utils.c.s
+
+CMakeFiles/Wolf3D.dir/src/validation_fill.c.o: CMakeFiles/Wolf3D.dir/flags.make
+CMakeFiles/Wolf3D.dir/src/validation_fill.c.o: ../src/validation_fill.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ablizniu/Documents/Wolf3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/Wolf3D.dir/src/validation_fill.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Wolf3D.dir/src/validation_fill.c.o   -c /Users/ablizniu/Documents/Wolf3D/src/validation_fill.c
+
+CMakeFiles/Wolf3D.dir/src/validation_fill.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Wolf3D.dir/src/validation_fill.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ablizniu/Documents/Wolf3D/src/validation_fill.c > CMakeFiles/Wolf3D.dir/src/validation_fill.c.i
+
+CMakeFiles/Wolf3D.dir/src/validation_fill.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Wolf3D.dir/src/validation_fill.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ablizniu/Documents/Wolf3D/src/validation_fill.c -o CMakeFiles/Wolf3D.dir/src/validation_fill.c.s
+
+CMakeFiles/Wolf3D.dir/src/validation_source.c.o: CMakeFiles/Wolf3D.dir/flags.make
+CMakeFiles/Wolf3D.dir/src/validation_source.c.o: ../src/validation_source.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ablizniu/Documents/Wolf3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/Wolf3D.dir/src/validation_source.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Wolf3D.dir/src/validation_source.c.o   -c /Users/ablizniu/Documents/Wolf3D/src/validation_source.c
+
+CMakeFiles/Wolf3D.dir/src/validation_source.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Wolf3D.dir/src/validation_source.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ablizniu/Documents/Wolf3D/src/validation_source.c > CMakeFiles/Wolf3D.dir/src/validation_source.c.i
+
+CMakeFiles/Wolf3D.dir/src/validation_source.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Wolf3D.dir/src/validation_source.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ablizniu/Documents/Wolf3D/src/validation_source.c -o CMakeFiles/Wolf3D.dir/src/validation_source.c.s
+
+CMakeFiles/Wolf3D.dir/src/key_kontroller.c.o: CMakeFiles/Wolf3D.dir/flags.make
+CMakeFiles/Wolf3D.dir/src/key_kontroller.c.o: ../src/key_kontroller.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ablizniu/Documents/Wolf3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/Wolf3D.dir/src/key_kontroller.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Wolf3D.dir/src/key_kontroller.c.o   -c /Users/ablizniu/Documents/Wolf3D/src/key_kontroller.c
+
+CMakeFiles/Wolf3D.dir/src/key_kontroller.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Wolf3D.dir/src/key_kontroller.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ablizniu/Documents/Wolf3D/src/key_kontroller.c > CMakeFiles/Wolf3D.dir/src/key_kontroller.c.i
+
+CMakeFiles/Wolf3D.dir/src/key_kontroller.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Wolf3D.dir/src/key_kontroller.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ablizniu/Documents/Wolf3D/src/key_kontroller.c -o CMakeFiles/Wolf3D.dir/src/key_kontroller.c.s
+
+CMakeFiles/Wolf3D.dir/src/draw_calculations.c.o: CMakeFiles/Wolf3D.dir/flags.make
+CMakeFiles/Wolf3D.dir/src/draw_calculations.c.o: ../src/draw_calculations.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ablizniu/Documents/Wolf3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/Wolf3D.dir/src/draw_calculations.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Wolf3D.dir/src/draw_calculations.c.o   -c /Users/ablizniu/Documents/Wolf3D/src/draw_calculations.c
+
+CMakeFiles/Wolf3D.dir/src/draw_calculations.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Wolf3D.dir/src/draw_calculations.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ablizniu/Documents/Wolf3D/src/draw_calculations.c > CMakeFiles/Wolf3D.dir/src/draw_calculations.c.i
+
+CMakeFiles/Wolf3D.dir/src/draw_calculations.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Wolf3D.dir/src/draw_calculations.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ablizniu/Documents/Wolf3D/src/draw_calculations.c -o CMakeFiles/Wolf3D.dir/src/draw_calculations.c.s
+
+CMakeFiles/Wolf3D.dir/src/draw_textures.c.o: CMakeFiles/Wolf3D.dir/flags.make
+CMakeFiles/Wolf3D.dir/src/draw_textures.c.o: ../src/draw_textures.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ablizniu/Documents/Wolf3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/Wolf3D.dir/src/draw_textures.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Wolf3D.dir/src/draw_textures.c.o   -c /Users/ablizniu/Documents/Wolf3D/src/draw_textures.c
+
+CMakeFiles/Wolf3D.dir/src/draw_textures.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Wolf3D.dir/src/draw_textures.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ablizniu/Documents/Wolf3D/src/draw_textures.c > CMakeFiles/Wolf3D.dir/src/draw_textures.c.i
+
+CMakeFiles/Wolf3D.dir/src/draw_textures.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Wolf3D.dir/src/draw_textures.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ablizniu/Documents/Wolf3D/src/draw_textures.c -o CMakeFiles/Wolf3D.dir/src/draw_textures.c.s
+
+CMakeFiles/Wolf3D.dir/src/intersection_algorithm.c.o: CMakeFiles/Wolf3D.dir/flags.make
+CMakeFiles/Wolf3D.dir/src/intersection_algorithm.c.o: ../src/intersection_algorithm.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ablizniu/Documents/Wolf3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/Wolf3D.dir/src/intersection_algorithm.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Wolf3D.dir/src/intersection_algorithm.c.o   -c /Users/ablizniu/Documents/Wolf3D/src/intersection_algorithm.c
+
+CMakeFiles/Wolf3D.dir/src/intersection_algorithm.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Wolf3D.dir/src/intersection_algorithm.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ablizniu/Documents/Wolf3D/src/intersection_algorithm.c > CMakeFiles/Wolf3D.dir/src/intersection_algorithm.c.i
+
+CMakeFiles/Wolf3D.dir/src/intersection_algorithm.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Wolf3D.dir/src/intersection_algorithm.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ablizniu/Documents/Wolf3D/src/intersection_algorithm.c -o CMakeFiles/Wolf3D.dir/src/intersection_algorithm.c.s
+
+CMakeFiles/Wolf3D.dir/src/intersection_algorithm_extra.c.o: CMakeFiles/Wolf3D.dir/flags.make
+CMakeFiles/Wolf3D.dir/src/intersection_algorithm_extra.c.o: ../src/intersection_algorithm_extra.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ablizniu/Documents/Wolf3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/Wolf3D.dir/src/intersection_algorithm_extra.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Wolf3D.dir/src/intersection_algorithm_extra.c.o   -c /Users/ablizniu/Documents/Wolf3D/src/intersection_algorithm_extra.c
+
+CMakeFiles/Wolf3D.dir/src/intersection_algorithm_extra.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Wolf3D.dir/src/intersection_algorithm_extra.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ablizniu/Documents/Wolf3D/src/intersection_algorithm_extra.c > CMakeFiles/Wolf3D.dir/src/intersection_algorithm_extra.c.i
+
+CMakeFiles/Wolf3D.dir/src/intersection_algorithm_extra.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Wolf3D.dir/src/intersection_algorithm_extra.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ablizniu/Documents/Wolf3D/src/intersection_algorithm_extra.c -o CMakeFiles/Wolf3D.dir/src/intersection_algorithm_extra.c.s
+
+CMakeFiles/Wolf3D.dir/src/draw_untextured.c.o: CMakeFiles/Wolf3D.dir/flags.make
+CMakeFiles/Wolf3D.dir/src/draw_untextured.c.o: ../src/draw_untextured.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ablizniu/Documents/Wolf3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/Wolf3D.dir/src/draw_untextured.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Wolf3D.dir/src/draw_untextured.c.o   -c /Users/ablizniu/Documents/Wolf3D/src/draw_untextured.c
+
+CMakeFiles/Wolf3D.dir/src/draw_untextured.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Wolf3D.dir/src/draw_untextured.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ablizniu/Documents/Wolf3D/src/draw_untextured.c > CMakeFiles/Wolf3D.dir/src/draw_untextured.c.i
+
+CMakeFiles/Wolf3D.dir/src/draw_untextured.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Wolf3D.dir/src/draw_untextured.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ablizniu/Documents/Wolf3D/src/draw_untextured.c -o CMakeFiles/Wolf3D.dir/src/draw_untextured.c.s
+
 # Object files for target Wolf3D
 Wolf3D_OBJECTS = \
 "CMakeFiles/Wolf3D.dir/src/main.c.o" \
 "CMakeFiles/Wolf3D.dir/src/draw.c.o" \
 "CMakeFiles/Wolf3D.dir/src/preparation.c.o" \
 "CMakeFiles/Wolf3D.dir/src/print.c.o" \
-"CMakeFiles/Wolf3D.dir/src/utils.c.o" \
+"CMakeFiles/Wolf3D.dir/src/draw_utils.c.o" \
 "CMakeFiles/Wolf3D.dir/src/validation.c.o" \
 "CMakeFiles/Wolf3D.dir/src/init.c.o" \
 "CMakeFiles/Wolf3D.dir/src/rotation_and_move.c.o" \
-"CMakeFiles/Wolf3D.dir/src/textures.c.o"
+"CMakeFiles/Wolf3D.dir/src/textures.c.o" \
+"CMakeFiles/Wolf3D.dir/src/preparation_utils.c.o" \
+"CMakeFiles/Wolf3D.dir/src/vector_utils.c.o" \
+"CMakeFiles/Wolf3D.dir/src/validation_utils.c.o" \
+"CMakeFiles/Wolf3D.dir/src/validation_list_utils.c.o" \
+"CMakeFiles/Wolf3D.dir/src/validation_fill.c.o" \
+"CMakeFiles/Wolf3D.dir/src/validation_source.c.o" \
+"CMakeFiles/Wolf3D.dir/src/key_kontroller.c.o" \
+"CMakeFiles/Wolf3D.dir/src/draw_calculations.c.o" \
+"CMakeFiles/Wolf3D.dir/src/draw_textures.c.o" \
+"CMakeFiles/Wolf3D.dir/src/intersection_algorithm.c.o" \
+"CMakeFiles/Wolf3D.dir/src/intersection_algorithm_extra.c.o" \
+"CMakeFiles/Wolf3D.dir/src/draw_untextured.c.o"
 
 # External object files for target Wolf3D
 Wolf3D_EXTERNAL_OBJECTS =
@@ -193,15 +361,27 @@ Wolf3D: CMakeFiles/Wolf3D.dir/src/main.c.o
 Wolf3D: CMakeFiles/Wolf3D.dir/src/draw.c.o
 Wolf3D: CMakeFiles/Wolf3D.dir/src/preparation.c.o
 Wolf3D: CMakeFiles/Wolf3D.dir/src/print.c.o
-Wolf3D: CMakeFiles/Wolf3D.dir/src/utils.c.o
+Wolf3D: CMakeFiles/Wolf3D.dir/src/draw_utils.c.o
 Wolf3D: CMakeFiles/Wolf3D.dir/src/validation.c.o
 Wolf3D: CMakeFiles/Wolf3D.dir/src/init.c.o
 Wolf3D: CMakeFiles/Wolf3D.dir/src/rotation_and_move.c.o
 Wolf3D: CMakeFiles/Wolf3D.dir/src/textures.c.o
+Wolf3D: CMakeFiles/Wolf3D.dir/src/preparation_utils.c.o
+Wolf3D: CMakeFiles/Wolf3D.dir/src/vector_utils.c.o
+Wolf3D: CMakeFiles/Wolf3D.dir/src/validation_utils.c.o
+Wolf3D: CMakeFiles/Wolf3D.dir/src/validation_list_utils.c.o
+Wolf3D: CMakeFiles/Wolf3D.dir/src/validation_fill.c.o
+Wolf3D: CMakeFiles/Wolf3D.dir/src/validation_source.c.o
+Wolf3D: CMakeFiles/Wolf3D.dir/src/key_kontroller.c.o
+Wolf3D: CMakeFiles/Wolf3D.dir/src/draw_calculations.c.o
+Wolf3D: CMakeFiles/Wolf3D.dir/src/draw_textures.c.o
+Wolf3D: CMakeFiles/Wolf3D.dir/src/intersection_algorithm.c.o
+Wolf3D: CMakeFiles/Wolf3D.dir/src/intersection_algorithm_extra.c.o
+Wolf3D: CMakeFiles/Wolf3D.dir/src/draw_untextured.c.o
 Wolf3D: CMakeFiles/Wolf3D.dir/build.make
 Wolf3D: libft.a
 Wolf3D: CMakeFiles/Wolf3D.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ablizniu/Documents/Wolf3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking C executable Wolf3D"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ablizniu/Documents/Wolf3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Linking C executable Wolf3D"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Wolf3D.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

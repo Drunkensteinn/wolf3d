@@ -3,43 +3,127 @@
 
 CMakeFiles/Wolf3D.dir/src/draw.c.o
  /Users/ablizniu/Documents/Wolf3D/includes/errors.h
+ /Users/ablizniu/Documents/Wolf3D/includes/keys.h
  /Users/ablizniu/Documents/Wolf3D/includes/wolf3d.h
  /Users/ablizniu/Documents/Wolf3D/libft/libft.h
  /Users/ablizniu/Documents/Wolf3D/src/draw.c
+CMakeFiles/Wolf3D.dir/src/draw_calculations.c.o
+ /Users/ablizniu/Documents/Wolf3D/includes/errors.h
+ /Users/ablizniu/Documents/Wolf3D/includes/keys.h
+ /Users/ablizniu/Documents/Wolf3D/includes/wolf3d.h
+ /Users/ablizniu/Documents/Wolf3D/libft/libft.h
+ /Users/ablizniu/Documents/Wolf3D/src/draw_calculations.c
+CMakeFiles/Wolf3D.dir/src/draw_textures.c.o
+ /Users/ablizniu/Documents/Wolf3D/includes/errors.h
+ /Users/ablizniu/Documents/Wolf3D/includes/keys.h
+ /Users/ablizniu/Documents/Wolf3D/includes/wolf3d.h
+ /Users/ablizniu/Documents/Wolf3D/libft/libft.h
+ /Users/ablizniu/Documents/Wolf3D/src/draw_textures.c
+CMakeFiles/Wolf3D.dir/src/draw_untextured.c.o
+ /Users/ablizniu/Documents/Wolf3D/includes/errors.h
+ /Users/ablizniu/Documents/Wolf3D/includes/keys.h
+ /Users/ablizniu/Documents/Wolf3D/includes/wolf3d.h
+ /Users/ablizniu/Documents/Wolf3D/libft/libft.h
+ /Users/ablizniu/Documents/Wolf3D/src/draw_untextured.c
+CMakeFiles/Wolf3D.dir/src/draw_utils.c.o
+ /Users/ablizniu/Documents/Wolf3D/includes/errors.h
+ /Users/ablizniu/Documents/Wolf3D/includes/keys.h
+ /Users/ablizniu/Documents/Wolf3D/includes/wolf3d.h
+ /Users/ablizniu/Documents/Wolf3D/libft/libft.h
+ /Users/ablizniu/Documents/Wolf3D/src/draw_utils.c
 CMakeFiles/Wolf3D.dir/src/init.c.o
  /Users/ablizniu/Documents/Wolf3D/includes/errors.h
+ /Users/ablizniu/Documents/Wolf3D/includes/keys.h
  /Users/ablizniu/Documents/Wolf3D/includes/wolf3d.h
  /Users/ablizniu/Documents/Wolf3D/libft/libft.h
  /Users/ablizniu/Documents/Wolf3D/src/init.c
+CMakeFiles/Wolf3D.dir/src/intersection_algorithm.c.o
+ /Users/ablizniu/Documents/Wolf3D/includes/errors.h
+ /Users/ablizniu/Documents/Wolf3D/includes/keys.h
+ /Users/ablizniu/Documents/Wolf3D/includes/wolf3d.h
+ /Users/ablizniu/Documents/Wolf3D/libft/libft.h
+ /Users/ablizniu/Documents/Wolf3D/src/intersection_algorithm.c
+CMakeFiles/Wolf3D.dir/src/intersection_algorithm_extra.c.o
+ /Users/ablizniu/Documents/Wolf3D/includes/errors.h
+ /Users/ablizniu/Documents/Wolf3D/includes/keys.h
+ /Users/ablizniu/Documents/Wolf3D/includes/wolf3d.h
+ /Users/ablizniu/Documents/Wolf3D/libft/libft.h
+ /Users/ablizniu/Documents/Wolf3D/src/intersection_algorithm_extra.c
+CMakeFiles/Wolf3D.dir/src/key_kontroller.c.o
+ /Users/ablizniu/Documents/Wolf3D/includes/errors.h
+ /Users/ablizniu/Documents/Wolf3D/includes/keys.h
+ /Users/ablizniu/Documents/Wolf3D/includes/wolf3d.h
+ /Users/ablizniu/Documents/Wolf3D/libft/libft.h
+ /Users/ablizniu/Documents/Wolf3D/src/key_kontroller.c
 CMakeFiles/Wolf3D.dir/src/main.c.o
  /Users/ablizniu/Documents/Wolf3D/includes/errors.h
+ /Users/ablizniu/Documents/Wolf3D/includes/keys.h
  /Users/ablizniu/Documents/Wolf3D/includes/wolf3d.h
  /Users/ablizniu/Documents/Wolf3D/libft/libft.h
  /Users/ablizniu/Documents/Wolf3D/src/main.c
 CMakeFiles/Wolf3D.dir/src/preparation.c.o
  /Users/ablizniu/Documents/Wolf3D/includes/errors.h
+ /Users/ablizniu/Documents/Wolf3D/includes/keys.h
  /Users/ablizniu/Documents/Wolf3D/includes/wolf3d.h
  /Users/ablizniu/Documents/Wolf3D/libft/libft.h
  /Users/ablizniu/Documents/Wolf3D/src/preparation.c
+CMakeFiles/Wolf3D.dir/src/preparation_utils.c.o
+ /Users/ablizniu/Documents/Wolf3D/includes/errors.h
+ /Users/ablizniu/Documents/Wolf3D/includes/keys.h
+ /Users/ablizniu/Documents/Wolf3D/includes/wolf3d.h
+ /Users/ablizniu/Documents/Wolf3D/libft/libft.h
+ /Users/ablizniu/Documents/Wolf3D/src/preparation_utils.c
 CMakeFiles/Wolf3D.dir/src/print.c.o
  /Users/ablizniu/Documents/Wolf3D/includes/errors.h
+ /Users/ablizniu/Documents/Wolf3D/includes/keys.h
  /Users/ablizniu/Documents/Wolf3D/includes/wolf3d.h
  /Users/ablizniu/Documents/Wolf3D/libft/libft.h
  /Users/ablizniu/Documents/Wolf3D/src/print.c
 CMakeFiles/Wolf3D.dir/src/rotation_and_move.c.o
  /Users/ablizniu/Documents/Wolf3D/includes/errors.h
+ /Users/ablizniu/Documents/Wolf3D/includes/keys.h
  /Users/ablizniu/Documents/Wolf3D/includes/wolf3d.h
  /Users/ablizniu/Documents/Wolf3D/libft/libft.h
  /Users/ablizniu/Documents/Wolf3D/src/rotation_and_move.c
 CMakeFiles/Wolf3D.dir/src/textures.c.o
  /Users/ablizniu/Documents/Wolf3D/includes/errors.h
+ /Users/ablizniu/Documents/Wolf3D/includes/keys.h
  /Users/ablizniu/Documents/Wolf3D/includes/wolf3d.h
  /Users/ablizniu/Documents/Wolf3D/libft/libft.h
  /Users/ablizniu/Documents/Wolf3D/src/textures.c
-CMakeFiles/Wolf3D.dir/src/utils.c.o
- /Users/ablizniu/Documents/Wolf3D/src/utils.c
 CMakeFiles/Wolf3D.dir/src/validation.c.o
  /Users/ablizniu/Documents/Wolf3D/includes/errors.h
+ /Users/ablizniu/Documents/Wolf3D/includes/keys.h
  /Users/ablizniu/Documents/Wolf3D/includes/wolf3d.h
  /Users/ablizniu/Documents/Wolf3D/libft/libft.h
  /Users/ablizniu/Documents/Wolf3D/src/validation.c
+CMakeFiles/Wolf3D.dir/src/validation_fill.c.o
+ /Users/ablizniu/Documents/Wolf3D/includes/errors.h
+ /Users/ablizniu/Documents/Wolf3D/includes/keys.h
+ /Users/ablizniu/Documents/Wolf3D/includes/wolf3d.h
+ /Users/ablizniu/Documents/Wolf3D/libft/libft.h
+ /Users/ablizniu/Documents/Wolf3D/src/validation_fill.c
+CMakeFiles/Wolf3D.dir/src/validation_list_utils.c.o
+ /Users/ablizniu/Documents/Wolf3D/includes/errors.h
+ /Users/ablizniu/Documents/Wolf3D/includes/keys.h
+ /Users/ablizniu/Documents/Wolf3D/includes/wolf3d.h
+ /Users/ablizniu/Documents/Wolf3D/libft/libft.h
+ /Users/ablizniu/Documents/Wolf3D/src/validation_list_utils.c
+CMakeFiles/Wolf3D.dir/src/validation_source.c.o
+ /Users/ablizniu/Documents/Wolf3D/includes/errors.h
+ /Users/ablizniu/Documents/Wolf3D/includes/keys.h
+ /Users/ablizniu/Documents/Wolf3D/includes/wolf3d.h
+ /Users/ablizniu/Documents/Wolf3D/libft/libft.h
+ /Users/ablizniu/Documents/Wolf3D/src/validation_source.c
+CMakeFiles/Wolf3D.dir/src/validation_utils.c.o
+ /Users/ablizniu/Documents/Wolf3D/includes/errors.h
+ /Users/ablizniu/Documents/Wolf3D/includes/keys.h
+ /Users/ablizniu/Documents/Wolf3D/includes/wolf3d.h
+ /Users/ablizniu/Documents/Wolf3D/libft/libft.h
+ /Users/ablizniu/Documents/Wolf3D/src/validation_utils.c
+CMakeFiles/Wolf3D.dir/src/vector_utils.c.o
+ /Users/ablizniu/Documents/Wolf3D/includes/errors.h
+ /Users/ablizniu/Documents/Wolf3D/includes/keys.h
+ /Users/ablizniu/Documents/Wolf3D/includes/wolf3d.h
+ /Users/ablizniu/Documents/Wolf3D/libft/libft.h
+ /Users/ablizniu/Documents/Wolf3D/src/vector_utils.c

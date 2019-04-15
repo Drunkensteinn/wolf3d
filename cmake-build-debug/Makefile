@@ -1972,6 +1972,114 @@ src/draw.c.s:
 	$(MAKE) -f CMakeFiles/Wolf3D.dir/build.make CMakeFiles/Wolf3D.dir/src/draw.c.s
 .PHONY : src/draw.c.s
 
+src/draw_calculations.o: src/draw_calculations.c.o
+
+.PHONY : src/draw_calculations.o
+
+# target to build an object file
+src/draw_calculations.c.o:
+	$(MAKE) -f CMakeFiles/Wolf3D.dir/build.make CMakeFiles/Wolf3D.dir/src/draw_calculations.c.o
+.PHONY : src/draw_calculations.c.o
+
+src/draw_calculations.i: src/draw_calculations.c.i
+
+.PHONY : src/draw_calculations.i
+
+# target to preprocess a source file
+src/draw_calculations.c.i:
+	$(MAKE) -f CMakeFiles/Wolf3D.dir/build.make CMakeFiles/Wolf3D.dir/src/draw_calculations.c.i
+.PHONY : src/draw_calculations.c.i
+
+src/draw_calculations.s: src/draw_calculations.c.s
+
+.PHONY : src/draw_calculations.s
+
+# target to generate assembly for a file
+src/draw_calculations.c.s:
+	$(MAKE) -f CMakeFiles/Wolf3D.dir/build.make CMakeFiles/Wolf3D.dir/src/draw_calculations.c.s
+.PHONY : src/draw_calculations.c.s
+
+src/draw_textures.o: src/draw_textures.c.o
+
+.PHONY : src/draw_textures.o
+
+# target to build an object file
+src/draw_textures.c.o:
+	$(MAKE) -f CMakeFiles/Wolf3D.dir/build.make CMakeFiles/Wolf3D.dir/src/draw_textures.c.o
+.PHONY : src/draw_textures.c.o
+
+src/draw_textures.i: src/draw_textures.c.i
+
+.PHONY : src/draw_textures.i
+
+# target to preprocess a source file
+src/draw_textures.c.i:
+	$(MAKE) -f CMakeFiles/Wolf3D.dir/build.make CMakeFiles/Wolf3D.dir/src/draw_textures.c.i
+.PHONY : src/draw_textures.c.i
+
+src/draw_textures.s: src/draw_textures.c.s
+
+.PHONY : src/draw_textures.s
+
+# target to generate assembly for a file
+src/draw_textures.c.s:
+	$(MAKE) -f CMakeFiles/Wolf3D.dir/build.make CMakeFiles/Wolf3D.dir/src/draw_textures.c.s
+.PHONY : src/draw_textures.c.s
+
+src/draw_untextured.o: src/draw_untextured.c.o
+
+.PHONY : src/draw_untextured.o
+
+# target to build an object file
+src/draw_untextured.c.o:
+	$(MAKE) -f CMakeFiles/Wolf3D.dir/build.make CMakeFiles/Wolf3D.dir/src/draw_untextured.c.o
+.PHONY : src/draw_untextured.c.o
+
+src/draw_untextured.i: src/draw_untextured.c.i
+
+.PHONY : src/draw_untextured.i
+
+# target to preprocess a source file
+src/draw_untextured.c.i:
+	$(MAKE) -f CMakeFiles/Wolf3D.dir/build.make CMakeFiles/Wolf3D.dir/src/draw_untextured.c.i
+.PHONY : src/draw_untextured.c.i
+
+src/draw_untextured.s: src/draw_untextured.c.s
+
+.PHONY : src/draw_untextured.s
+
+# target to generate assembly for a file
+src/draw_untextured.c.s:
+	$(MAKE) -f CMakeFiles/Wolf3D.dir/build.make CMakeFiles/Wolf3D.dir/src/draw_untextured.c.s
+.PHONY : src/draw_untextured.c.s
+
+src/draw_utils.o: src/draw_utils.c.o
+
+.PHONY : src/draw_utils.o
+
+# target to build an object file
+src/draw_utils.c.o:
+	$(MAKE) -f CMakeFiles/Wolf3D.dir/build.make CMakeFiles/Wolf3D.dir/src/draw_utils.c.o
+.PHONY : src/draw_utils.c.o
+
+src/draw_utils.i: src/draw_utils.c.i
+
+.PHONY : src/draw_utils.i
+
+# target to preprocess a source file
+src/draw_utils.c.i:
+	$(MAKE) -f CMakeFiles/Wolf3D.dir/build.make CMakeFiles/Wolf3D.dir/src/draw_utils.c.i
+.PHONY : src/draw_utils.c.i
+
+src/draw_utils.s: src/draw_utils.c.s
+
+.PHONY : src/draw_utils.s
+
+# target to generate assembly for a file
+src/draw_utils.c.s:
+	$(MAKE) -f CMakeFiles/Wolf3D.dir/build.make CMakeFiles/Wolf3D.dir/src/draw_utils.c.s
+.PHONY : src/draw_utils.c.s
+
 src/init.o: src/init.c.o
 
 .PHONY : src/init.o
@@ -1998,6 +2106,87 @@ src/init.s: src/init.c.s
 src/init.c.s:
 	$(MAKE) -f CMakeFiles/Wolf3D.dir/build.make CMakeFiles/Wolf3D.dir/src/init.c.s
 .PHONY : src/init.c.s
+
+src/intersection_algorithm.o: src/intersection_algorithm.c.o
+
+.PHONY : src/intersection_algorithm.o
+
+# target to build an object file
+src/intersection_algorithm.c.o:
+	$(MAKE) -f CMakeFiles/Wolf3D.dir/build.make CMakeFiles/Wolf3D.dir/src/intersection_algorithm.c.o
+.PHONY : src/intersection_algorithm.c.o
+
+src/intersection_algorithm.i: src/intersection_algorithm.c.i
+
+.PHONY : src/intersection_algorithm.i
+
+# target to preprocess a source file
+src/intersection_algorithm.c.i:
+	$(MAKE) -f CMakeFiles/Wolf3D.dir/build.make CMakeFiles/Wolf3D.dir/src/intersection_algorithm.c.i
+.PHONY : src/intersection_algorithm.c.i
+
+src/intersection_algorithm.s: src/intersection_algorithm.c.s
+
+.PHONY : src/intersection_algorithm.s
+
+# target to generate assembly for a file
+src/intersection_algorithm.c.s:
+	$(MAKE) -f CMakeFiles/Wolf3D.dir/build.make CMakeFiles/Wolf3D.dir/src/intersection_algorithm.c.s
+.PHONY : src/intersection_algorithm.c.s
+
+src/intersection_algorithm_extra.o: src/intersection_algorithm_extra.c.o
+
+.PHONY : src/intersection_algorithm_extra.o
+
+# target to build an object file
+src/intersection_algorithm_extra.c.o:
+	$(MAKE) -f CMakeFiles/Wolf3D.dir/build.make CMakeFiles/Wolf3D.dir/src/intersection_algorithm_extra.c.o
+.PHONY : src/intersection_algorithm_extra.c.o
+
+src/intersection_algorithm_extra.i: src/intersection_algorithm_extra.c.i
+
+.PHONY : src/intersection_algorithm_extra.i
+
+# target to preprocess a source file
+src/intersection_algorithm_extra.c.i:
+	$(MAKE) -f CMakeFiles/Wolf3D.dir/build.make CMakeFiles/Wolf3D.dir/src/intersection_algorithm_extra.c.i
+.PHONY : src/intersection_algorithm_extra.c.i
+
+src/intersection_algorithm_extra.s: src/intersection_algorithm_extra.c.s
+
+.PHONY : src/intersection_algorithm_extra.s
+
+# target to generate assembly for a file
+src/intersection_algorithm_extra.c.s:
+	$(MAKE) -f CMakeFiles/Wolf3D.dir/build.make CMakeFiles/Wolf3D.dir/src/intersection_algorithm_extra.c.s
+.PHONY : src/intersection_algorithm_extra.c.s
+
+src/key_kontroller.o: src/key_kontroller.c.o
+
+.PHONY : src/key_kontroller.o
+
+# target to build an object file
+src/key_kontroller.c.o:
+	$(MAKE) -f CMakeFiles/Wolf3D.dir/build.make CMakeFiles/Wolf3D.dir/src/key_kontroller.c.o
+.PHONY : src/key_kontroller.c.o
+
+src/key_kontroller.i: src/key_kontroller.c.i
+
+.PHONY : src/key_kontroller.i
+
+# target to preprocess a source file
+src/key_kontroller.c.i:
+	$(MAKE) -f CMakeFiles/Wolf3D.dir/build.make CMakeFiles/Wolf3D.dir/src/key_kontroller.c.i
+.PHONY : src/key_kontroller.c.i
+
+src/key_kontroller.s: src/key_kontroller.c.s
+
+.PHONY : src/key_kontroller.s
+
+# target to generate assembly for a file
+src/key_kontroller.c.s:
+	$(MAKE) -f CMakeFiles/Wolf3D.dir/build.make CMakeFiles/Wolf3D.dir/src/key_kontroller.c.s
+.PHONY : src/key_kontroller.c.s
 
 src/main.o: src/main.c.o
 
@@ -2052,6 +2241,33 @@ src/preparation.s: src/preparation.c.s
 src/preparation.c.s:
 	$(MAKE) -f CMakeFiles/Wolf3D.dir/build.make CMakeFiles/Wolf3D.dir/src/preparation.c.s
 .PHONY : src/preparation.c.s
+
+src/preparation_utils.o: src/preparation_utils.c.o
+
+.PHONY : src/preparation_utils.o
+
+# target to build an object file
+src/preparation_utils.c.o:
+	$(MAKE) -f CMakeFiles/Wolf3D.dir/build.make CMakeFiles/Wolf3D.dir/src/preparation_utils.c.o
+.PHONY : src/preparation_utils.c.o
+
+src/preparation_utils.i: src/preparation_utils.c.i
+
+.PHONY : src/preparation_utils.i
+
+# target to preprocess a source file
+src/preparation_utils.c.i:
+	$(MAKE) -f CMakeFiles/Wolf3D.dir/build.make CMakeFiles/Wolf3D.dir/src/preparation_utils.c.i
+.PHONY : src/preparation_utils.c.i
+
+src/preparation_utils.s: src/preparation_utils.c.s
+
+.PHONY : src/preparation_utils.s
+
+# target to generate assembly for a file
+src/preparation_utils.c.s:
+	$(MAKE) -f CMakeFiles/Wolf3D.dir/build.make CMakeFiles/Wolf3D.dir/src/preparation_utils.c.s
+.PHONY : src/preparation_utils.c.s
 
 src/print.o: src/print.c.o
 
@@ -2134,33 +2350,6 @@ src/textures.c.s:
 	$(MAKE) -f CMakeFiles/Wolf3D.dir/build.make CMakeFiles/Wolf3D.dir/src/textures.c.s
 .PHONY : src/textures.c.s
 
-src/utils.o: src/utils.c.o
-
-.PHONY : src/utils.o
-
-# target to build an object file
-src/utils.c.o:
-	$(MAKE) -f CMakeFiles/Wolf3D.dir/build.make CMakeFiles/Wolf3D.dir/src/utils.c.o
-.PHONY : src/utils.c.o
-
-src/utils.i: src/utils.c.i
-
-.PHONY : src/utils.i
-
-# target to preprocess a source file
-src/utils.c.i:
-	$(MAKE) -f CMakeFiles/Wolf3D.dir/build.make CMakeFiles/Wolf3D.dir/src/utils.c.i
-.PHONY : src/utils.c.i
-
-src/utils.s: src/utils.c.s
-
-.PHONY : src/utils.s
-
-# target to generate assembly for a file
-src/utils.c.s:
-	$(MAKE) -f CMakeFiles/Wolf3D.dir/build.make CMakeFiles/Wolf3D.dir/src/utils.c.s
-.PHONY : src/utils.c.s
-
 src/validation.o: src/validation.c.o
 
 .PHONY : src/validation.o
@@ -2187,6 +2376,141 @@ src/validation.s: src/validation.c.s
 src/validation.c.s:
 	$(MAKE) -f CMakeFiles/Wolf3D.dir/build.make CMakeFiles/Wolf3D.dir/src/validation.c.s
 .PHONY : src/validation.c.s
+
+src/validation_fill.o: src/validation_fill.c.o
+
+.PHONY : src/validation_fill.o
+
+# target to build an object file
+src/validation_fill.c.o:
+	$(MAKE) -f CMakeFiles/Wolf3D.dir/build.make CMakeFiles/Wolf3D.dir/src/validation_fill.c.o
+.PHONY : src/validation_fill.c.o
+
+src/validation_fill.i: src/validation_fill.c.i
+
+.PHONY : src/validation_fill.i
+
+# target to preprocess a source file
+src/validation_fill.c.i:
+	$(MAKE) -f CMakeFiles/Wolf3D.dir/build.make CMakeFiles/Wolf3D.dir/src/validation_fill.c.i
+.PHONY : src/validation_fill.c.i
+
+src/validation_fill.s: src/validation_fill.c.s
+
+.PHONY : src/validation_fill.s
+
+# target to generate assembly for a file
+src/validation_fill.c.s:
+	$(MAKE) -f CMakeFiles/Wolf3D.dir/build.make CMakeFiles/Wolf3D.dir/src/validation_fill.c.s
+.PHONY : src/validation_fill.c.s
+
+src/validation_list_utils.o: src/validation_list_utils.c.o
+
+.PHONY : src/validation_list_utils.o
+
+# target to build an object file
+src/validation_list_utils.c.o:
+	$(MAKE) -f CMakeFiles/Wolf3D.dir/build.make CMakeFiles/Wolf3D.dir/src/validation_list_utils.c.o
+.PHONY : src/validation_list_utils.c.o
+
+src/validation_list_utils.i: src/validation_list_utils.c.i
+
+.PHONY : src/validation_list_utils.i
+
+# target to preprocess a source file
+src/validation_list_utils.c.i:
+	$(MAKE) -f CMakeFiles/Wolf3D.dir/build.make CMakeFiles/Wolf3D.dir/src/validation_list_utils.c.i
+.PHONY : src/validation_list_utils.c.i
+
+src/validation_list_utils.s: src/validation_list_utils.c.s
+
+.PHONY : src/validation_list_utils.s
+
+# target to generate assembly for a file
+src/validation_list_utils.c.s:
+	$(MAKE) -f CMakeFiles/Wolf3D.dir/build.make CMakeFiles/Wolf3D.dir/src/validation_list_utils.c.s
+.PHONY : src/validation_list_utils.c.s
+
+src/validation_source.o: src/validation_source.c.o
+
+.PHONY : src/validation_source.o
+
+# target to build an object file
+src/validation_source.c.o:
+	$(MAKE) -f CMakeFiles/Wolf3D.dir/build.make CMakeFiles/Wolf3D.dir/src/validation_source.c.o
+.PHONY : src/validation_source.c.o
+
+src/validation_source.i: src/validation_source.c.i
+
+.PHONY : src/validation_source.i
+
+# target to preprocess a source file
+src/validation_source.c.i:
+	$(MAKE) -f CMakeFiles/Wolf3D.dir/build.make CMakeFiles/Wolf3D.dir/src/validation_source.c.i
+.PHONY : src/validation_source.c.i
+
+src/validation_source.s: src/validation_source.c.s
+
+.PHONY : src/validation_source.s
+
+# target to generate assembly for a file
+src/validation_source.c.s:
+	$(MAKE) -f CMakeFiles/Wolf3D.dir/build.make CMakeFiles/Wolf3D.dir/src/validation_source.c.s
+.PHONY : src/validation_source.c.s
+
+src/validation_utils.o: src/validation_utils.c.o
+
+.PHONY : src/validation_utils.o
+
+# target to build an object file
+src/validation_utils.c.o:
+	$(MAKE) -f CMakeFiles/Wolf3D.dir/build.make CMakeFiles/Wolf3D.dir/src/validation_utils.c.o
+.PHONY : src/validation_utils.c.o
+
+src/validation_utils.i: src/validation_utils.c.i
+
+.PHONY : src/validation_utils.i
+
+# target to preprocess a source file
+src/validation_utils.c.i:
+	$(MAKE) -f CMakeFiles/Wolf3D.dir/build.make CMakeFiles/Wolf3D.dir/src/validation_utils.c.i
+.PHONY : src/validation_utils.c.i
+
+src/validation_utils.s: src/validation_utils.c.s
+
+.PHONY : src/validation_utils.s
+
+# target to generate assembly for a file
+src/validation_utils.c.s:
+	$(MAKE) -f CMakeFiles/Wolf3D.dir/build.make CMakeFiles/Wolf3D.dir/src/validation_utils.c.s
+.PHONY : src/validation_utils.c.s
+
+src/vector_utils.o: src/vector_utils.c.o
+
+.PHONY : src/vector_utils.o
+
+# target to build an object file
+src/vector_utils.c.o:
+	$(MAKE) -f CMakeFiles/Wolf3D.dir/build.make CMakeFiles/Wolf3D.dir/src/vector_utils.c.o
+.PHONY : src/vector_utils.c.o
+
+src/vector_utils.i: src/vector_utils.c.i
+
+.PHONY : src/vector_utils.i
+
+# target to preprocess a source file
+src/vector_utils.c.i:
+	$(MAKE) -f CMakeFiles/Wolf3D.dir/build.make CMakeFiles/Wolf3D.dir/src/vector_utils.c.i
+.PHONY : src/vector_utils.c.i
+
+src/vector_utils.s: src/vector_utils.c.s
+
+.PHONY : src/vector_utils.s
+
+# target to generate assembly for a file
+src/vector_utils.c.s:
+	$(MAKE) -f CMakeFiles/Wolf3D.dir/build.make CMakeFiles/Wolf3D.dir/src/vector_utils.c.s
+.PHONY : src/vector_utils.c.s
 
 # Help Target
 help:
@@ -2402,15 +2726,39 @@ help:
 	@echo "... src/draw.o"
 	@echo "... src/draw.i"
 	@echo "... src/draw.s"
+	@echo "... src/draw_calculations.o"
+	@echo "... src/draw_calculations.i"
+	@echo "... src/draw_calculations.s"
+	@echo "... src/draw_textures.o"
+	@echo "... src/draw_textures.i"
+	@echo "... src/draw_textures.s"
+	@echo "... src/draw_untextured.o"
+	@echo "... src/draw_untextured.i"
+	@echo "... src/draw_untextured.s"
+	@echo "... src/draw_utils.o"
+	@echo "... src/draw_utils.i"
+	@echo "... src/draw_utils.s"
 	@echo "... src/init.o"
 	@echo "... src/init.i"
 	@echo "... src/init.s"
+	@echo "... src/intersection_algorithm.o"
+	@echo "... src/intersection_algorithm.i"
+	@echo "... src/intersection_algorithm.s"
+	@echo "... src/intersection_algorithm_extra.o"
+	@echo "... src/intersection_algorithm_extra.i"
+	@echo "... src/intersection_algorithm_extra.s"
+	@echo "... src/key_kontroller.o"
+	@echo "... src/key_kontroller.i"
+	@echo "... src/key_kontroller.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
 	@echo "... src/preparation.o"
 	@echo "... src/preparation.i"
 	@echo "... src/preparation.s"
+	@echo "... src/preparation_utils.o"
+	@echo "... src/preparation_utils.i"
+	@echo "... src/preparation_utils.s"
 	@echo "... src/print.o"
 	@echo "... src/print.i"
 	@echo "... src/print.s"
@@ -2420,12 +2768,24 @@ help:
 	@echo "... src/textures.o"
 	@echo "... src/textures.i"
 	@echo "... src/textures.s"
-	@echo "... src/utils.o"
-	@echo "... src/utils.i"
-	@echo "... src/utils.s"
 	@echo "... src/validation.o"
 	@echo "... src/validation.i"
 	@echo "... src/validation.s"
+	@echo "... src/validation_fill.o"
+	@echo "... src/validation_fill.i"
+	@echo "... src/validation_fill.s"
+	@echo "... src/validation_list_utils.o"
+	@echo "... src/validation_list_utils.i"
+	@echo "... src/validation_list_utils.s"
+	@echo "... src/validation_source.o"
+	@echo "... src/validation_source.i"
+	@echo "... src/validation_source.s"
+	@echo "... src/validation_utils.o"
+	@echo "... src/validation_utils.i"
+	@echo "... src/validation_utils.s"
+	@echo "... src/vector_utils.o"
+	@echo "... src/vector_utils.i"
+	@echo "... src/vector_utils.s"
 .PHONY : help
 
 

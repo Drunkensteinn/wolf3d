@@ -6,7 +6,7 @@
 /*   By: ablizniu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/11 20:37:34 by ablizniu          #+#    #+#             */
-/*   Updated: 2019/04/11 14:09:11 by ablizniu         ###   ########.fr       */
+/*   Updated: 2019/04/15 12:24:35 by ablizniu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,18 +18,13 @@
 #include <stdint.h>
 #include <limits.h>
 #include <math.h>
+#include <time.h>
 #include "errors.h"
-
-# define A_KEY					0
-# define D_KEY					2
-# define W_KEY					13
-# define S_KEY					1
-
+#include "keys.h"
 
 # define FOLDER					"../textures/"
 # define ANGLE_BETWEEN_RAYS		((double)FIELD_OF_VIEW / W)
 # define TEXTURES_NUM			8
-
 # define DEFAULT_TEXTURE		1
 # define DIMENSION				3
 # define DEFAULT_SCALE			64
@@ -41,7 +36,6 @@
 # define B(f) f[2]
 # define H 768
 # define W 1024
-
 
 typedef long double t_vector __attribute__((vector_size(sizeof(long double) * 3)));
 
@@ -89,11 +83,26 @@ typedef struct	s_hitcoords
 
 typedef struct	__attribute__((packed))	s_wolf3d
 {
+	t_bool				button_w;
+	t_bool				button_s;
+	t_bool				button_l;
+	t_bool				button_d;
+	t_bool				button_q;
+	t_bool				button_e;
+	t_bool				untextured;
+	t_bool				speed_up;
+	t_bool				mouse_lock;
+	t_bool				fps;
+	t_bool				help;
+
+	clock_t 			time;
+	clock_t				old_time;
+	double 				frame_time;
+
 	double				total_angle;
 	struct	s_map		**map;
 	struct	s_mlx		*mlx;
 	struct	s_textures	textures[TEXTURES_NUM];
-	struct	s_textures	multi_side[1];
 	double				x_column_fov;
 
 	size_t				len_array_y;
@@ -113,13 +122,10 @@ typedef struct	__attribute__((packed))	s_wolf3d
 	size_t				x;
 	size_t				y;
 
-	size_t 				map_pos_x;
-	size_t 				map_pos_y;
-
 	t_vector			ray;
 	t_vector			player[DIMENSION];
 	t_vector			direction[DIMENSION];
-	t_intersection		intersection;
+	t_intersection		inter;
 	t_hitcoords			saved_ray_x;
 	t_hitcoords			saved_ray_y;
 	uint32_t			texture_to_draw;
@@ -127,19 +133,60 @@ typedef struct	__attribute__((packed))	s_wolf3d
 
 }						t_wolf3d;
 
-double 	distance_to_player(t_wolf3d *wolf);
+void		draw_untextured_walls(t_wolf3d *wolf, double ray_x, double ray_y);
 
-double	calculate_len_ray(t_wolf3d *wolf, void (*f)(t_wolf3d *));
+void		texture_draw(t_wolf3d *wolf, double height);
 
-double_t get_dist(void);
+void		define_ray_angle(t_wolf3d *wolf);
 
-double	calculate_wall(t_wolf3d *wolf, double wall_dist);
+void		init_the_game(t_wolf3d *wolf);
 
-t_vector  norm_vector(t_vector vector);
+void		print_help(t_wolf3d *wolf);
 
-double	len_vector(long double x0, long double x1);
+void 		fill_map(t_wolf3d *wolf, t_list *lst);
 
-void		floor_draw(t_wolf3d *wolf, int32_t end_of_wall, double heigth, double len_ray);
+void		tmp_list(t_list **lst, const void *content, const size_t content_size);
+
+void		del_list(t_list *lst);
+
+size_t		find_maximum_valid_num(t_list *lst);
+
+void		alloc_map(t_wolf3d *wolf, t_list *lst);
+
+size_t		len_list(t_list *lst);
+
+size_t		count_valid_members(char *line, size_t size);
+
+void		fill_players_coords(t_wolf3d *wolf, size_t x, size_t y);
+
+t_vector	find_cell(t_wolf3d *wolf, double x, double y);
+
+void		rotate(t_wolf3d *wolf, double angle, t_bool direction);
+
+int			mouse_event(int x, int y, t_wolf3d *wolf);
+
+int			exit_wolf(t_wolf3d *wolf);
+
+int 		keys_unpress(int code, t_wolf3d *wolf);
+
+int			draw_cycle(t_wolf3d *wolf);
+
+void draw_untextured_floor_celling(t_wolf3d *wolf, int32_t end_of_wall);
+
+double		distance_to_player(t_wolf3d *wolf);
+
+double		calculate_len_ray(t_wolf3d *wolf, void (*f)(t_wolf3d *));
+
+double_t	get_dist(void);
+
+double		calculate_wall(t_wolf3d *wolf, double wall_dist);
+
+t_vector	norm_vector(t_vector vector);
+
+double		len_vector(long double x0, long double x1);
+
+void		floor_celling_draw(t_wolf3d *wolf, int32_t end_of_wall,
+							   double heigth);
 
 t_vector 	ft_zero_vector(t_vector vector);
 
@@ -155,15 +202,15 @@ size_t		transfer_coords_y(t_wolf3d *wolf, double y);
 
 void		check(t_wolf3d *wolf, double x, double y, int32_t *hit);
 
-void		movement(t_wolf3d *wolf, int32_t code);
+void		movement(t_wolf3d *wolf);
 
-void		rotating(t_wolf3d *wolf, int32_t code);
+void		rotating(t_wolf3d *wolf);
 
 t_vector	vector_scaling(t_vector vector, double num);
 
 void		matrix_mult(t_wolf3d *wolf);
 
-int			keys(int code, t_wolf3d *wolf);
+int			keys_press(int32_t code, t_wolf3d *wolf);
 
 void		first_inter_y(t_wolf3d *wolf);
 
@@ -181,9 +228,7 @@ void		preparation(t_wolf3d *wolf);
 
 void		write_line(t_wolf3d *wolf, int32_t from, int32_t to, int32_t attribute);
 
-void		source_rewrite(t_wolf3d *wolf, int32_t fd, char *path);
-
-void		map_rewrite(t_wolf3d *wolf, size_t row, int32_t pos);
+void		validation_source(t_wolf3d *wolf, int32_t fd, char *path);
 
 t_map		*init_member(size_t size);
 

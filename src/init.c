@@ -12,9 +12,17 @@
 
 #include "../includes/wolf3d.h"
 
-static t_mlx *init_mlx(void)
+void			init_the_game(t_wolf3d *wolf)
 {
-	t_mlx *member;
+	wolf->player[2] = (t_vector){0, 0, 1};
+	wolf->player[1] = (t_vector){-1, 0, 0};
+	matrix_mult(wolf);
+	main_draw_function(wolf);
+}
+
+static t_mlx	*init_mlx(void)
+{
+	t_mlx		*member;
 
 	if (!(member = (t_mlx *)ft_memalloc(sizeof(t_mlx))))
 		return (NULL);
@@ -27,27 +35,27 @@ static t_mlx *init_mlx(void)
 	return (member);
 }
 
-t_map *init_member(size_t size)
+t_map			*init_member(size_t size)
 {
-	t_map *member;
+	t_map		*member;
 
 	if (!(member = (t_map *)ft_memalloc(sizeof(t_map) * size)))
 		return (NULL);
 	return (member);
 }
 
-t_map **init_map(size_t size)
+t_map			**init_map(size_t size)
 {
-	t_map	**member;
+	t_map		**member;
 
 	if (!(member = (t_map **)ft_memalloc(sizeof(t_map *) * size)))
 		return (NULL);
 	return (member);
 }
 
-t_wolf3d *init_wolf3d(void)
+t_wolf3d		*init_wolf3d(void)
 {
-	t_wolf3d *member;
+	t_wolf3d	*member;
 
 	if (!(member = (t_wolf3d *)ft_memalloc(sizeof(t_wolf3d))))
 		return (NULL);

@@ -125,6 +125,9 @@
 		<Unit filename="/Users/ablizniu/Documents/Wolf3D/includes/errors.h">
 			<Option target="ft"/>
 		</Unit>
+		<Unit filename="/Users/ablizniu/Documents/Wolf3D/includes/keys.h">
+			<Option target="ft"/>
+		</Unit>
 		<Unit filename="/Users/ablizniu/Documents/Wolf3D/includes/wolf3d.h">
 			<Option target="ft"/>
 		</Unit>
@@ -332,13 +335,37 @@
 		<Unit filename="/Users/ablizniu/Documents/Wolf3D/src/draw.c">
 			<Option target="Wolf3D"/>
 		</Unit>
+		<Unit filename="/Users/ablizniu/Documents/Wolf3D/src/draw_calculations.c">
+			<Option target="Wolf3D"/>
+		</Unit>
+		<Unit filename="/Users/ablizniu/Documents/Wolf3D/src/draw_textures.c">
+			<Option target="Wolf3D"/>
+		</Unit>
+		<Unit filename="/Users/ablizniu/Documents/Wolf3D/src/draw_untextured.c">
+			<Option target="Wolf3D"/>
+		</Unit>
+		<Unit filename="/Users/ablizniu/Documents/Wolf3D/src/draw_utils.c">
+			<Option target="Wolf3D"/>
+		</Unit>
 		<Unit filename="/Users/ablizniu/Documents/Wolf3D/src/init.c">
+			<Option target="Wolf3D"/>
+		</Unit>
+		<Unit filename="/Users/ablizniu/Documents/Wolf3D/src/intersection_algorithm.c">
+			<Option target="Wolf3D"/>
+		</Unit>
+		<Unit filename="/Users/ablizniu/Documents/Wolf3D/src/intersection_algorithm_extra.c">
+			<Option target="Wolf3D"/>
+		</Unit>
+		<Unit filename="/Users/ablizniu/Documents/Wolf3D/src/key_kontroller.c">
 			<Option target="Wolf3D"/>
 		</Unit>
 		<Unit filename="/Users/ablizniu/Documents/Wolf3D/src/main.c">
 			<Option target="Wolf3D"/>
 		</Unit>
 		<Unit filename="/Users/ablizniu/Documents/Wolf3D/src/preparation.c">
+			<Option target="Wolf3D"/>
+		</Unit>
+		<Unit filename="/Users/ablizniu/Documents/Wolf3D/src/preparation_utils.c">
 			<Option target="Wolf3D"/>
 		</Unit>
 		<Unit filename="/Users/ablizniu/Documents/Wolf3D/src/print.c">
@@ -350,10 +377,22 @@
 		<Unit filename="/Users/ablizniu/Documents/Wolf3D/src/textures.c">
 			<Option target="Wolf3D"/>
 		</Unit>
-		<Unit filename="/Users/ablizniu/Documents/Wolf3D/src/utils.c">
+		<Unit filename="/Users/ablizniu/Documents/Wolf3D/src/validation.c">
 			<Option target="Wolf3D"/>
 		</Unit>
-		<Unit filename="/Users/ablizniu/Documents/Wolf3D/src/validation.c">
+		<Unit filename="/Users/ablizniu/Documents/Wolf3D/src/validation_fill.c">
+			<Option target="Wolf3D"/>
+		</Unit>
+		<Unit filename="/Users/ablizniu/Documents/Wolf3D/src/validation_list_utils.c">
+			<Option target="Wolf3D"/>
+		</Unit>
+		<Unit filename="/Users/ablizniu/Documents/Wolf3D/src/validation_source.c">
+			<Option target="Wolf3D"/>
+		</Unit>
+		<Unit filename="/Users/ablizniu/Documents/Wolf3D/src/validation_utils.c">
+			<Option target="Wolf3D"/>
+		</Unit>
+		<Unit filename="/Users/ablizniu/Documents/Wolf3D/src/vector_utils.c">
 			<Option target="Wolf3D"/>
 		</Unit>
 		<Unit filename="/Users/ablizniu/Documents/Wolf3D/CMakeLists.txt">
